@@ -11,6 +11,7 @@ body {
     background-color: #1f2430;
     text-align: center;
     border-radius: 15px;
+    max-width: 400px;
 
     filter: drop-shadow(0px 2px 5px black);
     transition: transform .3s;
@@ -18,4 +19,38 @@ body {
 
 ul {
     list-style: none;
+    padding-left: 0px;
+}
+
+li {
+    font-size: 1.2em;
+    padding: .5em;
+}
+
+li:hover {
+    background-color: white;
+    color: #1f2430;
+    /* Transition this later! */
+}
+
+#name-heading {
+    padding-top: 1em;
+    padding-bottom: 0em;
+}
+
+#info-box-img {
+    width: 200px; /*FIX THIS LATER*/
+    border-style: solid;
+    border-color: white;
+    border-width: 3px;
+    border-radius: 1000px;
+}
+
+#last-modified {
+    padding-bottom: 1em;
+}
+
+#class-heading {
+    padding: .5em;
+    background-color: #2b3342;
 }
