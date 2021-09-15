@@ -40,8 +40,7 @@ li:hover {
 }
 
 #info-box-img {
-    width: 200px;
-    /*FIX THIS LATER*/
+    width: 200px; /*FIX THIS LATER*/
     border-style: solid;
     border-color: white;
     border-width: 3px;
@@ -63,13 +62,12 @@ ul a {
 
 /* unvisited link */
 a:link {
-
     color: white;
 }
 
 /* visited link */
-a:visited {
-    color: #44546e;
+ul a:visited {
+    color:white /* #44546e*/;
 }
 
 .bottom-info {
