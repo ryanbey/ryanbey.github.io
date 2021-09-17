@@ -32,7 +32,7 @@ li {
 li:hover {
     background-color: white;
     color: #0a0e14;
-    transition: background-color 400ms, color 400ms;
+    transition: background 400ms, color 400ms;
 }
 
 #name-heading {
