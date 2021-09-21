@@ -4,4 +4,4 @@ document.getElementById('current-year').innerText = "\u00A9" + d.getFullYear() +
 
 // Updates "Last Updated" on assignment portal home page
 var lastmodified = document.lastModified;
-document.getElementById('last-modified').innerText = "Last Updated: " + lastmodified;
+document.getElementById('last-updated').innerText = "Last Updated: " + lastmodified;
