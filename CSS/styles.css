@@ -118,13 +118,13 @@ a:visited {
         margin-left: auto;
         padding-left: 2em;
         padding-right: 2em;
-        padding-bottom: 2em;
         border-top-left-radius: 15px;
         border-bottom-left-radius: 15px;
         background-color: #1f2430;
     }
 
     #name-heading {
+        margin-top: .8em;
         grid-column: 1;
         text-align: center;
     }
@@ -152,8 +152,8 @@ a:visited {
         /* vertically centering nav links */
         display: grid;
         align-items: center;
-        padding-top: 5em;
-        padding-bottom: 5em;
+        padding-top: 4em;
+        padding-bottom: 4em;
         
         margin-right: auto;
         font-size: 1em;
