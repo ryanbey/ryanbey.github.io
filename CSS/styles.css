@@ -39,15 +39,21 @@ ul {
     filter: drop-shadow(0px 2px 5px black);
 }
 
-li {
-    font-size: 1.2em;
-    padding: .5em;
+.navigation-box {
+    margin-bottom: 1em;
 }
 
-li:hover {
+.navigation-list {
+    font-size: 1.2em;
+    padding-top: .5em;
+    padding-bottom: .5em;
+    margin: 0;
+}
+
+.navigation-list:hover {
     background-color: white;
     color: #0a0e14;
-    transition: background 400ms, color 400ms;
+    transition: background 350ms, color 350ms;
 }
 
 #name-heading {
@@ -69,7 +75,7 @@ li:hover {
     background-color: #293241;
 }
 
-ul a {
+.nav-link {
     text-decoration: none;
 }
 
@@ -79,7 +85,7 @@ a:link {
 }
 
 /* visited link */
-ul a:visited {
+.nav-link:visited {
     color:white /* #44546e*/;
 }
 
