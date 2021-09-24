@@ -47,7 +47,7 @@ a:visited {
 /************************************************************************
 * 3. Mobile
 *************************************************************************/
-@media (max-width: 47em) {
+@media (max-width: 32.5em) {
     #content {
         margin-left: auto;
         margin-right: auto;
@@ -106,7 +106,7 @@ a:visited {
 /************************************************************************
 * 4. Tablet
 *************************************************************************/
-@media (min-width: 47em) {
+@media (min-width: 32.5em) {
     #content {
         display: grid;
         grid-template-columns: 50% 50%;
@@ -124,7 +124,7 @@ a:visited {
     }
 
     #name-heading {
-        margin-top: .8em;
+        margin-top: 1.2em;
         grid-column: 1;
         text-align: center;
     }
@@ -137,9 +137,9 @@ a:visited {
 
         grid-column: 1;
         grid-row: 2;
-        border-radius: 500px;
+        border-radius: 50%;
         border: 3px solid white;
-        width: 70%;
+        width: 60%;
     }
 
     #class-heading {
