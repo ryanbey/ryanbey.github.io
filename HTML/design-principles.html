@@ -14,25 +14,45 @@
 <body>
     <header>
         <h1 id="page-heading">Design Principles</h1>
-        <h2 id="name">Ryan Bey</h2>
     </header>
 
     <nav>
-        <ul>
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="#">Lesson</a></li>
-            <li><a href="#">Lesson</a></li>
-            <li><a href="#">Lesson</a></li>
-            <li><a href="#">Lesson</a></li>
-            <li><a href="#">Lesson</a></li>
-        </ul>
+        <a href="../index.html"><p class="navigation-list">Home</p></a>
+        <a href="../html/design-principles.html"><p class="navigation-list">Design Principles</p></a>
+        <a href="#"><p class="navigation-list">Weather Site Plan</p></a>
+        <a href="#"><p class="navigation-list">Lesson 4</p></a>
+        <a href="#"><p class="navigation-list">Lesson 5</p></a>
+        <a href="#"><p class="navigation-list">Lesson 6</p></a>
     </nav>
 
-    <p>STUFF</p>
+    <div id="content">
+        <div id="principle-1" class="principle-box">
+            <h2 class="principle-title">Alignment</h2>
+            <img class="principle-img" src="../images/nascar.jpg" alt="NASCAR screenshot">
+            <h3 class="principle-source"><a href="https://nascar.com" target="_blank">NASCAR.com</a></h3>
+            <p class="principle-description">The NASCAR mobile homepage has great alignment. The elements are organized in a what that it very easy to read and interpret. The positioning of the different parts of the page are consistent looking and pleasing to the eye. One example is the images on the articles on the lower half of the screen. They are all the same size and leave enough space to be able to read the headlines.</p>
+        </div>
+
+        <div id="principle-2" class="principle-box">
+            <h2 class="principle-title">Proximity</h2>
+            <img class="principle-img" src="../images/dbrand.jpg" alt="Dbrand screenshot">
+            <h3 class="principle-source"><a href="https://dbrand.com" target="_blank">dbrand.com</a></h3>
+            <p class="principle-description">This site does a great job of using proximity to emphasize the importance of different elements on the page. The obvious example here is the large image with the heading and description being the only things visible when you first load the website. This relationship between the large image and smaller heading and text show that they really wanted to emphasize the image and product they are trying to sell. </p>
+        </div>
+
+        <div id="principle-3" class="principle-box">
+            <h2 class="principle-title">Contrast</h2>
+            <img class="principle-img" src="../images/github.jpg" alt="Github screenshot">
+            <h3 class="principle-source"><a href="https://github.com" target="_blank">Github.com</a></h3>
+            <p class="principle-description">Github does a great job with their homepage of highlighting the things that they beleive their users are going to be looking for. They do this with good contrast. The heading, text input, and sign up button stick out like a sore thumb, while the less important descriptive text is more subdued to not distract the user from what they are most likely looking for. However, it is still bright enough to be easily readable.</p>
+        </div>
+    </div>
 
     <footer>
-
+        <p id="current-year"></p>
+        <p id="documentation"><a href="https://developer.mozilla.org/en-US/" target="_blank">MDN Documentation Site</a> | BYU-Idaho</p>
+        <p id="last-updated"></p>
+        <script src="../js/portal.js"></script>
     </footer>
 </body>
-
 </html>
