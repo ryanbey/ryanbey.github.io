@@ -29,6 +29,11 @@ a:link, a:visited {
     text-decoration: none;
 }
 
+a:link:hover, a:visited:hover {
+    color: #7896ce;
+    transition: color 200ms;
+}
+
 .navigation-list {
     padding: .85em;
     display: inline;
@@ -57,9 +62,13 @@ a:link, a:visited {
     margin-bottom: 2em;
 }
 
-.principle-title, .principle-source {
-    margin-top: .5em;
-    margin-bottom: .5em;
+.principle-source {
+    padding: .5em;
+}
+
+.principle-source {
+    background-color:#293241;
+    text-decoration: underline;
 }
 
 .principle-img {
@@ -69,7 +78,8 @@ a:link, a:visited {
 }
 
 .principle-description {
-    padding: 1em;
+    padding-right: 1em;
+    padding-left: 1em;
 }
     
 
