@@ -38,6 +38,13 @@ ul {
 
 li {
     padding: .5em;
+    margin-bottom: 0;
+}
+
+li:hover {
+    background: #e8e8e8;
+    border-radius: 15px;
+    transition: background 300ms;
 }
 
 a {
@@ -47,7 +54,6 @@ a {
 
 a:hover {
     color: #00bcbf;
-    text-decoration: underline;
     transition: text-decoration, color 300ms;
 }
 
