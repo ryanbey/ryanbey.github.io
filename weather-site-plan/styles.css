@@ -83,7 +83,7 @@ a:hover {
 
 .info-box-text {
     line-height: 1.4em;
-    padding: 1em;
+    padding: 1.2em;
     margin: 0;
 }
 
@@ -138,5 +138,41 @@ a:hover {
         font-size: 1.2em;
         display: flex;
         justify-content: center;
+    }
+}
+
+/* Audience Page */
+@media (min-width: 50em) {
+    .persona-grid {
+        max-width: 80em;
+        margin-left: auto;
+        margin-right: auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #persona-1 {
+        grid-column: 1;
+    }
+
+    #persona-2 {
+        grid-column: 2;
+    }
+
+    .scenario-grid {
+        max-width: 90em;
+        margin-left: auto;
+        margin-right: auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .scenario-grid-2 {
+        grid-column: 1/4;
+        max-width: 80em;
+        margin-left: auto;
+        margin-right: auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
     }
 }
