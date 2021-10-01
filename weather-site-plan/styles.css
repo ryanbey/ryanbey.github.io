@@ -1,6 +1,6 @@
-/* Varela Round - Site logo */
+/* Varela Round - Site logo & Headings*/
 @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
-/* Open Sans - Paragraphs and headings */
+/* Open Sans - Paragraphs*/
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Varela+Round&display=swap');
 
 
@@ -99,6 +99,45 @@ a:hover {
 
 #info-box-link:hover {
     color: #dadada;
+}
+
+.persona-img {
+    border: solid 3px #e8e8e8;
+    border-radius: 50%;
+    margin-top: 1em;
+}
+
+.color-box {
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    margin-bottom: 1em;
+    padding: .5em;
+    height: 4em;
+    max-width: 20em;
+}
+
+.color-box p {
+    margin-top: .3em;
+}
+
+#background-color-box {
+    margin-top: 1em;
+    background: #e8e8e8;
+}
+
+#foreground-color-box {
+    border: solid 3px #e8e8e8;
+}
+
+#accent-color-box {
+    background: #00bcbf;
+    color: white;
+}
+
+#text-color-box {
+    background: #666666;
+    color: white;
 }
 
 /*****************************************************************
