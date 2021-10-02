@@ -5,7 +5,7 @@
 
 
 /*****************************************************************
-*                            General
+*                           General
 ******************************************************************/
 body {
     text-align: center;
@@ -56,6 +56,10 @@ a:hover {
     transition: text-decoration, color 300ms;
 }
 
+footer {
+    font-size: .8em;
+}
+
 /*****************************************************************
 *                       Mobile / Tablet
 ******************************************************************/
@@ -67,6 +71,7 @@ a:hover {
     max-width: 90%;
     filter: drop-shadow(0px 3px 2px rgb(190, 190, 190));
     margin-bottom: 2em;
+    padding-bottom: 1em;
 }
 
 .info-box-heading {
@@ -115,6 +120,12 @@ a:hover {
     padding: .5em;
     height: 4em;
     max-width: 20em;
+
+    transition: transform 200ms;
+}
+
+.color-box:hover {
+    transform: scale(1.05);
 }
 
 .color-box p {
@@ -140,6 +151,41 @@ a:hover {
     color: white;
 }
 
+#varela-round-example {
+    font-family: "Varela Round";
+    font-size: 2.5em;
+}
+
+#open-sans-example {
+    font-family: "Open Sans";
+    font-size: 2.5em;
+}
+
+.font-button {
+    background-color: #00bcbf;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    display: inline-block;
+    font-size: 14px;
+    margin-bottom: 2em;
+    
+    transition: all ease 0.25s;
+  }
+    
+.font-button:hover {
+  background: #6dcfd1;
+  cursor: pointer;
+  filter: drop-shadow(0px 3px 1px rgb(190, 190, 190));
+}
+
+#font-info-box, #color-info-box {
+    max-width: 50em;
+    padding-bottom: 2em;
+}
+
 /*****************************************************************
 *                           Desktop
 ******************************************************************/
@@ -149,7 +195,7 @@ a:hover {
         margin-right: auto;
         max-width: 60%;
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 60% 40%;
     }
 
     #ib-1 {
@@ -199,11 +245,16 @@ a:hover {
     }
 
     .scenario-grid {
-        max-width: 90em;
+        max-width: 76em;
         margin-left: auto;
         margin-right: auto;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
+        grid-gap: 1em;
+    }
+
+    .scenario-grid .info-box {
+        max-width: 25em;
     }
 
     .scenario-grid-2 {
@@ -213,5 +264,6 @@ a:hover {
         margin-right: auto;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+        grid-gap: 5em;
     }
 }
