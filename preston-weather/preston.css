@@ -21,9 +21,20 @@ body {
 header {
     display: flex;
     justify-content: center;
+    flex-direction: column;
     background: white;
     padding-bottom: 1em;
 }
+
+header img {
+    max-width: 50%;
+    margin: 0 auto;
+}
+
+header p {
+    margin: 0;
+}
+
 /*****************************************************************
 *                       Mobile / Tablet
 ******************************************************************/
@@ -103,6 +114,8 @@ ul {
     font-size: 1.3em;
 	color: #666666;
 	transition: 0.5s;
+    border-radius: 10px;
+    margin-bottom: .3em;
 }
 
 .navigation a:hover {
@@ -115,8 +128,17 @@ ul {
 	display: block;
 }
 
-@media (min-width: 55em) {
+footer {
+    margin-top: 10em;
+    background: white;
+    padding: .2em;
+    font-size: .9em;
+}
 
+/*****************************************************************
+*                          Desktop
+******************************************************************/
+@media (min-width: 55em) {
     .info-box {
         max-width: 40em;
     }

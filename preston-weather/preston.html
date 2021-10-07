@@ -11,13 +11,16 @@
 </head>
 <body>
     <header>
-        <img id="header-logo" src="../weather-site-plan/images/header-logo.png" alt="Mist header logo">       
+        <div class="header-content">
+            <img id="header-logo" src="../weather-site-plan/images/header-logo.png" alt="Mist header logo">
+            <p>weather is cool</p>
+        </div>
     </header>
 
     <nav>
         <ul class="navigation">
             <li><a class="menu" href="#" ><img id="hamburger-icon" src="images/hamburger-icon.png">Menu</a></li>
-            <li><a href="#">Home</a></li>
+            <li><a href="../index.html">Home</a></li>
             <li><a href="#">Preston</a></li>
             <li><a href="#">Soda Springs</a></li>
             <li><a href="#">Fish Haven</a></li>
@@ -28,16 +31,18 @@
 
     <main>
         <h1 class="town-page-heading">Preston, ID</h1>
-        <h2 class="info-box"><i>Hero with weather summary</i></h2>
+        <h2 class="info-box"><i>Hero w/ Weather Summary</i></h2>
         <h2 class="info-box"><i>5 Day Forecast</i></h2>
         <h2 class="info-box"><i>Article</i></h2>
         <h2 class="info-box"><i>Contact Information</i></h2>
     </main>
 
-    <script src="toggle-menu.js"></script>
-
     <footer>
-
+        <p id="current-year"></p>
+        <p id="last-updated"></p>
     </footer>
+
+    <script src="toggle-menu.js"></script>
+    <script src="last-updated.js"></script>
 </body>
 </html>
