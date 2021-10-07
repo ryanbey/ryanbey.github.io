@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../weather-site-plan/styles.css"/>
+    <link rel="stylesheet" href="preston.css"/>
     <link rel="stylesheet" href="../css/normalize.css">
     <link rel="shortcut icon" href="../weather-site-plan/images/favicon.png?v=2"/>
     <title>mist | Preston, ID</title>
@@ -15,7 +15,8 @@
     </header>
 
     <nav>
-        <ul>
+        <ul class="navigation">
+            <li><a class="menu" href="#" ><img id="hamburger-icon" src="images/hamburger-icon.png">Menu</a></li>
             <li><a href="#">Home</a></li>
             <li><a href="#">Preston</a></li>
             <li><a href="#">Soda Springs</a></li>
@@ -27,11 +28,13 @@
 
     <main>
         <h1 class="town-page-heading">Preston, ID</h1>
-        <p class="info-box">Hero with weather summary</p>
-        <p class="info-box">5-day forecast</p>
-        <p class="info-box">Article</p>
-        <p class="info-box">Contact Information</p>
+        <h2 class="info-box"><i>Hero with weather summary</i></h2>
+        <h2 class="info-box"><i>5 Day Forecast</i></h2>
+        <h2 class="info-box"><i>Article</i></h2>
+        <h2 class="info-box"><i>Contact Information</i></h2>
     </main>
+
+    <script src="toggle-menu.js"></script>
 
     <footer>
 
