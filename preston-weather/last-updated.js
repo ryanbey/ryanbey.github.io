@@ -11,7 +11,7 @@ let months = [ "January", "February", "March",
 
 let days = [ "Sunday", "Monday", "Tuesday",
              "Wednesday", "Thursday",
-            "Friday", "Saturday" ];
+             "Friday", "Saturday" ];
 
 let date = new Date();
 let monthName = months[date.getMonth()];
@@ -19,4 +19,4 @@ let dayName = days[date.getDay()];
 let year = date.getFullYear();
 let lastUpdated = `${dayName}, ${date.getDate()} ${monthName} ${year}`;
 
-document.getElementById("last-updated").innerHTML = lastUpdated;
+document.getElementById("last-updated").innerHTML = "Last Updated: " + lastUpdated;
