@@ -34,6 +34,10 @@ nav {
     align-items: center;
     justify-content: space-around;
     padding: .39em;
+    position: sticky;
+    top: 0;
+    z-index: 5;
+    background: rgba(0, 0, 0, 50%);
 }
 
 nav ul {
