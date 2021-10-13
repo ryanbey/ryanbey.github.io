@@ -4,7 +4,7 @@
 /* Color pallet variables */
 :root {
     --color-black: black;
-    --color-gray: #151515;
+    --color-gray: #1a1a1a;
     --color-turq: #013333;
     --color-mint: #00DCB4;
     --color-offw: #EDEFF5;
@@ -66,11 +66,14 @@ header {
 }
 
 #header-name {
+    font-size: 3em;
     position: relative;
-    top: -9em;
+    top: -6em;
 }
 
 #header-sub {
+    font-size: 1.6em;
+    font-weight: 300;
     position: relative;
     top: -13em;
 }
@@ -79,19 +82,19 @@ header {
     border-radius: 50%;
     border: solid 5px var(--color-black);
     position: relative;
-    top: -17.3em;
+    top: -20em;
 }
-
 
 /***********************
 *   Main
 ***********************/
 main {
     position: relative;
-    top: -18em;
-    max-width: 60%;
+    top: -19.7em;
+    /* max-width: 60%; */
     margin-left: auto;
     margin-right: auto;
+    font-size: 1.2em;
 }
 
 .black-bg {
@@ -104,6 +107,16 @@ main {
 
 .turq-bg {
     background: var(--color-turq);
+}
+
+.section-heading {
+    font-size: 2em;
+    margin-bottom: .3em;
+}
+
+/* FIX THIS */
+.section-content {
+    max-width: 60%;
 }
 
 /***********************
@@ -161,6 +174,6 @@ button:hover {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: var(--color-turq);
+    background: var(--color-gray);
     border-radius: 4px;
 }
