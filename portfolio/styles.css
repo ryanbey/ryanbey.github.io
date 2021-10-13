@@ -37,8 +37,8 @@ nav {
     
     position: sticky;
     top: 0;
-    z-index: 5;
-    background: rgba(0, 0, 0, 50%);
+    z-index: 100;
+    background: rgba(0, 0, 0, 75%);
 }
 
 nav ul {
@@ -76,6 +76,11 @@ header {
     top: -6em;
 }
 
+#header-banner {
+    width: 100%;
+    max-height: 300px;
+}
+
 #header-sub {
     font-size: 1.6em;
     font-weight: 300;
@@ -95,16 +100,16 @@ header {
 ***********************/
 main {
     position: relative;
-    top: -19.7em;
+    top: -17em;
     /* max-width: 60%; */
     margin-left: auto;
     margin-right: auto;
     font-size: 1.2em;
 }
 
-.black-bg {
+/* .black-bg {
     background: var(--color-black);
-}
+} */
 
 .gray-bg {
     background: var(--color-gray);
@@ -117,11 +122,24 @@ main {
 .section-heading {
     font-size: 2em;
     margin-bottom: .3em;
+    margin-top: 0;
 }
 
-/* FIX THIS */
 .section-content {
     max-width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+#skills-flexbox {
+    display: flex;
+    justify-content: space-between;
+}
+
+.skills-box b {
+    font-size: 1.3em;
 }
 
 /***********************
@@ -129,6 +147,14 @@ main {
 ***********************/
 footer {
     background: var(--color-offw);
+}
+
+.footer-content {
+    max-width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1em;
+    color: var(--color-black);
 }
 
 /***********************
@@ -168,6 +194,7 @@ button:hover {
     width: 90px;
     height: 10px;
     background: var(--color-mint);
+    margin-bottom: 2em;
 }
 
 ::-webkit-scrollbar {
