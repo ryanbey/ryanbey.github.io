@@ -24,9 +24,11 @@
 
     <header>
         <img draggable="false" id="header-banner" src="images/header-banner.png" alt="header image">
-        <h1 id="header-name">Ryan Bey</h1>
-        <h2 id="header-sub">Software Engineering Student</h2>
-        <img id="header-img" src="images/header-portrait.png" alt="header image of Ryan">
+        <div class="header-content">
+            <h1 id="header-name">Ryan Bey</h1>
+            <h2 id="header-sub">Software Engineering Student</h2>
+            <img id="header-img" src="images/header-portrait.png" alt="header image of Ryan">
+        </div>
     </header>
 
     <main>
@@ -60,24 +62,44 @@
             </div>
         </section>
 
-        <section id="projects" class="black-bg">
+        <section id="projects">
             <div class="section-content">
                 <h3 class="section-heading">PROJECTS</h3>
                 <div class="divider"></div>
                 
                 <div id="nastracks" class="projects-box">
-                    <h4 class="box-heading">Nastracks</h3>
-                    <img class="box-img" src="images/nastracks-img.png"> <!--COMPRESS LATER-->
+                    <h4 class="box-heading">Nastracks</h4>
+                    <ul class="tag-list">
+                        <li class="lang-box-tag">HTML</li>
+                        <li class="lang-box-tag">CSS</li>
+                        <li class="env-box-tag">VS Code</li>
+                        <li class="env-box-tag">Photoshop</li>
+                    </ul>
+                    <img draggable="false" class="box-img" src="images/nastracks-img.png"> <!--COMPRESS LATER-->
                     <p class="box-p">A useful site for racing fans to get information about the many different tracks NASCAR visits in its top 3 touring series.</p>
                 </div>
                 <div id="morssenger" class="projects-box">
-                    <h4 class="box-heading">Morssenger</h3>
-                    <img class="box-img" src="https://via.placeholder.com/350x250">
-                    <p class="box-p">A built-from-scratch Android app that allows messaging using morse code. The app includes inputs for normal text and morse code, as well as a live translator to switch back and forth. Built with a group of 3 other classmates.</p>
+                    <h4 class="box-heading">Morssenger</h4>
+                    <ul class="tag-list">
+                        <li class="lang-box-tag">Java</li>
+                        <li class="lang-box-tag">XML</li>
+                        <li class="env-box-tag">Android Studio</li>
+                        <li class="env-box-tag">Firebase</li>
+                    </ul>
+                    <img draggable="false" class="box-img" src="images/morssenger-img.png">
+                    <p class="box-p">A built-from-scratch Android app that allows messaging using morse code. The app includes inputs for normal text and morse code, as well as a live translator to switch back and forth.</p>
                 </div>
                 <div id="portfolio" class="projects-box">
-                    <h4 class="box-heading">Portfolio Website</h3>
-                    <img class="box-img" src="images/portfolio-img.png"> <!--COMPRESS LATER-->
+                    <h4 class="box-heading">Portfolio Website</h4>
+                    <ul class="tag-list">
+                        <li class="lang-box-tag">HTML</li>
+                        <li class="lang-box-tag">CSS</li>
+                        <li class="lang-box-tag">Javascript</li>
+                        <li class="env-box-tag">VS Code</li>
+                        <li class="env-box-tag">Photoshop</li>
+                        <li class="env-box-tag">XD</li>
+                    </ul>
+                    <img draggable="false" class="box-img" src="images/portfolio-img.png"> <!--COMPRESS LATER-->
                     <p class="box-p">I built this website as a place to showcase my work and love for web design and development, as well as a way for future employers to get the information about me that they want quickly.</p>
                 </div>
             </div>
@@ -88,15 +110,23 @@
                 <h3 class="section-heading">CERTIFICATES</h3>
                 <div class="divider"></div>
 
-                <div id="html-cert" class="certificates-box">
-                    <img src="https://via.placeholder.com/300x200">
-                    <h4 class="box-heading">Sololearn: HTML</h4>
-                    <img src="https://via.placeholder.com/300x200">
-                    <h4 class="box-heading">Sololearn: CSS</h4>
-                    <img src="https://via.placeholder.com/300x200">
-                    <h4 class="box-heading">Sololearn: Javascript</h4>
-                    <img src="https://via.placeholder.com/300x200">
-                    <h4 class="box-heading">Sololearn: SQL</h4>
+                <div class="certificate-flexbox">
+                    <div class="certificate-box">
+                        <img draggable="false" src="images/cert-html.png" alt="html certificate image">
+                        <h4 class="certificate-box-heading">Sololearn: HTML</h4>
+                    </div>
+                    <div class="certificate-box">
+                        <img draggable="false" src="images/cert-css.png" alt="css certificate image">
+                        <h4 class="certificate-box-heading">Sololearn: CSS</h4>
+                    </div>
+                    <div class="certificate-box">
+                        <img draggable="false" src="images/cert-js.png" alt="javascript certificate image">
+                        <h4 class="certificate-box-heading">Sololearn: Javascript</h4>
+                    </div>
+                    <div class="certificate-box">
+                        <img draggable="false" src="images/cert-sql.png" alt="sql certificate image">
+                        <h4 class="certificate-box-heading">Sololearn: SQL</h4>
+                    </div>
                 </div>
             </div>
         </section>
