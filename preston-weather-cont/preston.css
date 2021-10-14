@@ -38,7 +38,7 @@ header img {
 /*****************************************************************
 *                       Mobile / Tablet
 ******************************************************************/
-.info-box {
+.info-box, .info-box-transparent {
     margin-left: auto;
     margin-right: auto;
     background: white;
@@ -48,6 +48,11 @@ header img {
     margin-bottom: 1em;
     border-bottom: solid 4px #00bcbf;
     padding-bottom: 1em;
+}
+
+.info-box-transparent {
+    background: rgba(255, 255, 255, 70%);
+    filter: drop-shadow(0px 3px 2px rgba(190, 190, 190, 0%));
 }
 
 .hero-image {
@@ -118,8 +123,35 @@ header img {
     margin: 0;
 }
 
-#five-day-forecast {
+#five-day-forecast, #five-day-box {
     display: none;
+}
+
+.forecast-box {
+    margin-top: 1em;
+    padding: 1em;
+    border-radius: 10px;
+    border: 3px solid #e8e8e8;
+    max-width: 7rem;
+    margin: 1em;
+}
+
+.forecast-image {
+    padding: 0;
+    margin: 0;
+}
+
+.forecast-day, .forecast-info {
+    margin: .5em;
+}
+
+#weather-summary{
+    width: 50%;
+    max-width: 20rem;
+    position: absolute;
+    top: 27%;
+    left: 8%;
+    z-index: 100;
 }
 
 nav {
@@ -184,7 +216,7 @@ footer {
 ******************************************************************/
 @media (min-width: 55em) {
     .info-box {
-        max-width: 60%;
+        max-width: 1000px;
     }
 
     .navigation {
@@ -211,6 +243,16 @@ footer {
     }
 
     #five-day-forecast {
+        display: flex;
+        justify-content: center;
+    }
+
+    #five-day-box {
         display: block;
+    }
+
+    #weather-summary{
+        left: 25%;
+        top: 30%;
     }
 }
