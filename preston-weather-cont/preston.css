@@ -145,13 +145,8 @@ header img {
     margin: .5em;
 }
 
-#weather-summary{
-    width: 50%;
-    max-width: 20rem;
-    position: absolute;
-    top: 27%;
-    left: 8%;
-    z-index: 100;
+#weather-summary {
+    display: block;
 }
 
 nav {
@@ -204,6 +199,12 @@ ul {
 	display: block;
 }
 
+.pancake {
+    padding: 1em;
+    background: #00bcbf;
+    color: white;
+}
+
 footer {
     margin-top: 10em;
     background: white;
@@ -252,7 +253,11 @@ footer {
     }
 
     #weather-summary{
+        width: 50%;
+        max-width: 20rem;
+        position: absolute;
+        top: 35%;
         left: 25%;
-        top: 30%;
+        z-index: 100;
     }
 }

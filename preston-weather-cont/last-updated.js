@@ -19,3 +19,15 @@ let year = d.getFullYear();
 let lastUpdated = `${dayName}, ${d.getDate()} ${monthName} ${year}`;
 
 document.getElementById("last-updated").innerHTML = "Last Updated: " + lastUpdated;
+
+// Current day for pancake banner
+let literallyToday = new Date()
+let today = literallyToday.getDay();
+
+// If it's Friday, add the pancake banner
+if (today == 5) {
+    document.querySelector(".pancake").innerHTML = "Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion"
+}
+else {
+    document.querySelector(".pancake").classList.remove("pancake");
+}
