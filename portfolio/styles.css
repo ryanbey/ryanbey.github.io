@@ -220,6 +220,29 @@ main {
     margin: .5em;
 }
 
+.contact-grid {
+    display: grid;
+}
+
+#my-info {
+    grid-column: 1;
+}
+
+#contact-me {
+    grid-column: 2;
+}
+
+#my-info-content {
+    margin: 0;
+    padding-left: 40%;
+}
+
+#contact-me-content {
+    margin: 0;
+    margin-left: 3em;
+    
+}
+
 /***********************
 *   Footer
 ***********************/
