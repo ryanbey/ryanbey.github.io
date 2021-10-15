@@ -149,6 +149,10 @@ header img {
     display: block;
 }
 
+.weather-icon {
+    margin-bottom: 1em;
+}
+
 nav {
 	margin: 0 auto;
 	max-width: 100%;
@@ -200,9 +204,15 @@ ul {
 }
 
 .pancake {
-    padding: 1em;
+    padding: .5em;
     background: #00bcbf;
     color: white;
+}
+
+.js-required p {
+    margin: 0;
+    padding: .5em;
+    font-size: .8em;
 }
 
 footer {
@@ -256,7 +266,7 @@ footer {
         width: 50%;
         max-width: 20rem;
         position: absolute;
-        top: 35%;
+        top: 40%;
         left: 25%;
         z-index: 100;
     }
