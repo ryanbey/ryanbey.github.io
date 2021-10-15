@@ -217,6 +217,7 @@ main {
 }
 
 .certificate-box-heading {
+    font-weight: 400;
     margin: .5em;
 }
 
@@ -240,7 +241,6 @@ main {
 #contact-me-content {
     margin: 0;
     margin-left: 3em;
-    
 }
 
 /***********************
@@ -286,6 +286,11 @@ button:hover {
     background: var(--color-mint);
     color: var(--color-white);
     transition: all 300ms;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
 }
 
 /***********************
