@@ -11,7 +11,8 @@
 
 <body>
     <nav>
-        <ul>
+        <ul class="navigation">
+            <li><a class="menu" href="#" ><img id="hamburger-icon" src="images/hamburger-icon.png" alt="hamburger menu icon"></a></li>
             <li><a class="nav-link + active-page" href="#">HOME</a></li>
             <li><a class="nav-link" href="experience.html">EXPERIENCE</a></li>
             <li><a class="nav-link" href="#">PROJECTS</a></li>
@@ -23,7 +24,6 @@
     </nav>
 
     <header>
-        <img draggable="false" id="header-banner" src="images/header-banner.png" alt="header image">
         <div class="header-content">
             <h1 id="header-name">Ryan Bey</h1>
             <h2 id="header-sub">Software Engineering Student</h2>
@@ -87,7 +87,7 @@
                         <li class="env-box-tag">Firebase</li>
                     </ul>
                     <img draggable="false" class="box-img" src="images/morssenger-img.png">
-                    <p class="box-p">A built-from-scratch Android app that allows messaging using morse code. The app includes inputs for normal text and morse code, as well as a live translator to switch back and forth.</p>
+                    <p class="box-p">A team-built Android app that allows messaging with live input translation and options for message playback with audio or vibration.</p>
                 </div>
                 <div id="portfolio" class="projects-box">
                     <h4 class="box-heading">Portfolio Website</h4>
@@ -100,7 +100,7 @@
                         <li class="env-box-tag">XD</li>
                     </ul>
                     <img draggable="false" class="box-img" src="images/portfolio-img.png"> <!--COMPRESS LATER-->
-                    <p class="box-p">I built this website as a place to showcase my work and love for web design and development, as well as a way for future employers to get the information about me that they want quickly.</p>
+                    <p class="box-p">A place to showcase my work and love for web design and development, as well as a place for future employers to get the info they need.</p>
                 </div>
             </div>
         </section>
@@ -134,10 +134,20 @@
         <div class="contact-grid">
             <section id="my-info" class="turq-bg">
                 <div id="my-info-content" class="section-content">
-                    <h3 class="section-heading">MY INFO</h3>
+                    <h3 class="section-heading">LINKS</h3>
                     <div class="divider"></div>
-                    <p><b>Phone: </b>(661) 335-1703</p>
-                    <p><b>Email: </b>beycommaryan@gmail.com</p>
+                    <div class="social-item">
+                        <img class="social-icon" src="images/facebook-icon.png" alt="facebook icon">
+                        <a href="https://www.facebook.com/beycommaryan" target="_blank">Facebook</a>
+                    </div>
+                    <div class="social-item">
+                        <img class="social-icon" src="images/linkedin-icon.png" alt="linkedin icon">
+                        <a href="https://www.linkedin.com/in/ryanbey/" target="_blank">LinkedIn</a>
+                    </div>
+                    <div class="social-item">
+                        <img class="social-icon" src="images/github-icon.png" alt="github">
+                        <a href="https://github.com/ryanbey" target="_blank">GitHub</a>
+                    </div>
                 </div>
             </section>
 
@@ -146,11 +156,11 @@
                     <h3 class="section-heading">CONTACT ME</h3>
                     <div class="divider"></div>
 
-                    <form class="contact-form" method="post" action="contact-me.php">
+                    <form class="contact-form-grid" method="post" action="https://forms.un-static.com/forms/887712dbb9f4996032a18818df45a9331f4ab1fe">
                         <input type="text" id="name" name="name" class="contact-form-box" placeholder="Name" required>
                         <input type="email" id="email" name="email" class="contact-form-box" placeholder="Email" required>
                         <textarea id="message" name="Message" class="contact-form-box" rows="5" maxlength="3000" placeholder="Message" required></textarea>
-                        <button type="submit" id="contact-me-submit">Send Message</button>               
+                        <button type="submit" id="submit-button">Send Message</button>               
                     </form>
                 </div>
             </section>
@@ -159,18 +169,10 @@
 
     <footer>
         <div class="footer-content">
-            <div class="footer-left">
-                <button id="footer-button">Download Resume</button>
-                <p id="copyright">&copy;2021 Ryan Bey</p>
-            </div>
-            <div class="footer-right">
-                <div class="socials">
-                    <img src="https://via.placeholder.com/50x50">
-                    <img src="https://via.placeholder.com/50x50">
-                    <img src="https://via.placeholder.com/50x50">
-                </div>
-            </div>
+            <p id="copyright">&copy;2021 Ryan Bey</p>
         </div>    
     </footer>
+
+    <script src="toggle-menu.js"></script>
 </body>
 </html>
