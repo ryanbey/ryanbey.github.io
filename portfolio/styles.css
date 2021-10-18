@@ -34,7 +34,6 @@ nav {
     align-items: center;
     justify-content: space-around;
     padding: .39em;
-    
     position: sticky;
     top: 0;
     z-index: 100;
@@ -246,6 +245,10 @@ main {
     padding-left: 0;
 }
 
+.projects-button {
+    font-size: .9em;
+}
+
 /***********************
 *   Certificates
 ***********************/
@@ -272,9 +275,6 @@ main {
 ***********************/
 footer {
     font-size: 1.2em;
-}
-
-.contact-grid {
     display: grid;
     grid-template-columns: 50% 50%;
 }
@@ -541,10 +541,6 @@ button:hover {
         margin: 0;
         padding-left: 2em;
     }
-
-    /* .contact-me-content {
-        padding-left: 0;
-    } */
 
     #submit-button {
         grid-column: 1/3;
