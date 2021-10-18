@@ -79,6 +79,14 @@ header {
     height: 300px;
 }
 
+.subpage-header {
+    background-image: linear-gradient(to bottom,
+    rgba(0, 0, 0, 0), rgb(0, 0, 0, .3), rgba(0, 0, 0, 1)),
+    url('images/header-banner.png');
+    background-attachment: scroll;
+    background-position: 0px 0px;
+}
+
 .header-content {
     display: flex;
     flex-flow: column;
@@ -114,6 +122,10 @@ main {
     margin-right: auto;
     margin-top: 5rem;
     font-size: 1.2em;
+}
+
+.subpage-main {
+    margin-top: -8rem;
 }
 
 .black-bg {
@@ -189,6 +201,10 @@ main {
     grid-row: 2;
 }
 
+.subpage-tag-list {
+    margin-left: 0;
+}
+
 .lang-box-tag, .env-box-tag {
     padding: .3em;
     padding-left: .7em;
@@ -224,6 +240,10 @@ main {
 .box-heading, .box-p {
     padding-left: 2rem;
     padding-right: 2rem;
+}
+
+.subpage-box-p {
+    padding-left: 0;
 }
 
 /***********************
