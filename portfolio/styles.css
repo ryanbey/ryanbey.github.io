@@ -177,6 +177,23 @@ main {
     background-size: cover;
 }
 
+.projects-grid {
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+
+.projects-grid-left {
+    grid-column: 1;
+}
+
+.projects-grid-right {
+    grid-column: 2;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+
 .projects-box {
     display: grid;
     margin-bottom: 2em;
@@ -245,9 +262,18 @@ main {
     padding-left: 0;
 }
 
+.subpage-box-faded {
+    color: rgb(179, 179, 179);
+}
+
 .projects-button {
     font-size: .9em;
 }
+
+/***********************
+*   Carousel
+***********************/
+
 
 /***********************
 *   Certificates
