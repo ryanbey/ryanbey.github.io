@@ -14,7 +14,7 @@
         <ul class="navigation">
             <li><a class="menu" href="#" ><img id="hamburger-icon" src="images/hamburger-icon.png" alt="hamburger menu icon"></a></li>
             <li><a class="nav-link" href="index.html">HOME</a></li>
-            <li><a class="nav-link + active-page" href="#">PROJECTS</a></li>
+            <li><a class="nav-link active-page" href="#">PROJECTS</a></li>
             <li><a class="nav-link" href="graphics.html">GRAPHICS</a></li>
             <li><a class="nav-link" href="about-me.html">ABOUT ME</a></li>
         </ul>
@@ -27,22 +27,29 @@
     <main class="subpage-main">
         <section id="nastracks">
             <div class="section-content">
-                <h3 class="section-heading">NASTRACKS</h3>
-                <div class="divider"></div>
-                <ul class="tag-list + subpage-tag-list">
-                    <li class="lang-box-tag">HTML</li>
-                    <li class="lang-box-tag">CSS</li>
-                    <li class="env-box-tag">Glitch</li>
-                    <li class="env-box-tag">Photoshop</li>
-                </ul>
-                <p class="subpage-box-p + subpage-box-faded"><i>A useful site for racing fans to get information about the many different tracks NASCAR visits in its top 3 touring series.</i></p>
-                <p class="subpage-box-p"><b>Skills Learned</b></p>
-                <ul>
-                    <li class="subpage-box-p">First full site using basic HTML and CSS</li>
-                    <li class="subpage-box-p">Creating an effective site plan including designing and following wireframes</li>
-                    <li class="subpage-box-p">Giving me a proper initiation with Glitch so I could fully appreciate VS Code later</li>
-                </ul>
-                <a href="https://nastracks.glitch.me/" target="_blank"><button class="projects-button">VISIT SITE</button></a>
+                <div class="projects-grid">
+                    <div class="projects-grid-left">
+                        <h3 class="section-heading">NASTRACKS</h3>
+                        <div class="divider"></div>
+                        <ul class="tag-list subpage-tag-list">
+                            <li class="lang-box-tag">HTML</li>
+                            <li class="lang-box-tag">CSS</li>
+                            <li class="env-box-tag">Glitch</li>
+                            <li class="env-box-tag">Photoshop</li>
+                        </ul>
+                        <p class="subpage-box-p subpage-box-faded"><i>A useful site for racing fans to get information about the many different tracks NASCAR visits in its top 3 touring series.</i></p>
+                        <p class="subpage-box-p"><b>Skills Learned</b></p>
+                        <ul>
+                            <li class="subpage-box-p">First full site using basic HTML and CSS</li>
+                            <li class="subpage-box-p">Creating an effective site plan including designing and following wireframes</li>
+                            <li class="subpage-box-p">Giving me a proper initiation with Glitch so I could fully appreciate VS Code later</li>
+                        </ul>
+                        <a href="https://nastracks.glitch.me/" target="_blank"><button class="projects-button">VISIT SITE</button></a>
+                    </div>
+                    <div class="projects-grid-right">
+                        <img src="https://via.placeholder.com/400x300" alt="nastracks gallery">
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -52,20 +59,20 @@
                     <div class="projects-grid-left">
                         <h3 class="section-heading">MORSSENGER</h3>
                         <div class="divider"></div>
-                        <ul class="tag-list + subpage-tag-list">
+                        <ul class="tag-list subpage-tag-list">
                             <li class="lang-box-tag">Java</li>
                             <li class="lang-box-tag">XML</li>
                             <li class="env-box-tag">Android Studio</li>
                             <li class="env-box-tag">Firebase</li>
                         </ul>
-                        <p class="subpage-box-p + subpage-box-faded"><i>A team-built Android app that allows messaging with live input translation and options for message playback with audio or vibration.</i></p>
+                        <p class="subpage-box-p subpage-box-faded"><i>A team-built Android app that allows messaging with live input translation and options for message playback with audio or vibration.</i></p>
                         <p class="subpage-box-p"><b>Skills Learned</b></p>
                         <ul>
                             <li class="subpage-box-p">Working effectively with a team</li>
                             <li class="subpage-box-p">Using GitHub for version control and keeping track of contributions</li>
                             <li class="subpage-box-p">Adjusting design decisions and adapting the project as issues arise</li>
                         </ul>
-                        <a href="https://github.com/ryanbey/Morssenger" target="_blank"><button class="projects-button + gray-bg">GITHUB REPO</button></a>
+                        <a href="https://github.com/ryanbey/Morssenger" target="_blank"><button class="projects-button gray-bg">GITHUB REPO</button></a>
                     </div>
                     <div class="projects-grid-right">
                         <img src="https://via.placeholder.com/400x300" alt="nastracks gallery">
@@ -76,24 +83,31 @@
 
         <section id="portfolio" class="black-bg">
             <div class="section-content">
-                <h3 class="section-heading">PORTFOLIO</h3>
-                <div class="divider"></div>
-                <ul class="tag-list + subpage-tag-list">
-                    <li class="lang-box-tag">HTML</li>
-                    <li class="lang-box-tag">CSS</li>
-                    <li class="lang-box-tag">Javascript</li>
-                    <li class="env-box-tag">VS Code</li>
-                    <li class="env-box-tag">Photoshop</li>
-                    <li class="env-box-tag">XD</li>
-                </ul>
-                <p class="subpage-box-p + subpage-box-faded"><i>A place to showcase my work and love for web design and development, as well as a place for future employers to get the info they need.</i></p>
-                <p class="subpage-box-p"><b>Skills Learned</b></p>
-                <ul>
-                    <li class="subpage-box-p">Using semantic HTML and more advanced CSS</li>
-                    <li class="subpage-box-p">File downloads and forms</li>
-                    <li class="subpage-box-p">Meeting personal deadlines and design expectations</li>
-                </ul>
-                <a href="https://github.com/ryanbey/ryanbey.github.io/tree/master/portfolio" target="_blank"><button class="projects-button">GITHUB REPO</button></a>
+                <div class="projects-grid">
+                    <div class="projects-grid-left">
+                        <h3 class="section-heading">PORTFOLIO</h3>
+                        <div class="divider"></div>
+                        <ul class="tag-list subpage-tag-list">
+                            <li class="lang-box-tag">HTML</li>
+                            <li class="lang-box-tag">CSS</li>
+                            <li class="lang-box-tag">Javascript</li>
+                            <li class="env-box-tag">VS Code</li>
+                            <li class="env-box-tag">Photoshop</li>
+                            <li class="env-box-tag">XD</li>
+                        </ul>
+                        <p class="subpage-box-p subpage-box-faded"><i>A place to showcase my work and love for web design and development, as well as a place for future employers to get the info they need.</i></p>
+                        <p class="subpage-box-p"><b>Skills Learned</b></p>
+                        <ul>
+                            <li class="subpage-box-p">Using semantic HTML and more advanced CSS</li>
+                            <li class="subpage-box-p">File downloads and forms</li>
+                            <li class="subpage-box-p">Meeting personal deadlines and design expectations</li>
+                        </ul>
+                        <a href="https://github.com/ryanbey/ryanbey.github.io/tree/master/portfolio" target="_blank"><button class="projects-button">GITHUB REPO</button></a>
+                    </div>
+                    <div class="projects-grid-right">
+                        <img src="https://via.placeholder.com/400x300" alt="nastracks gallery">
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -101,7 +115,7 @@
             <div class="section-content">
                 <h3 class="section-heading">CAKES BY JAIME</h3>
                 <div class="divider"></div>
-                <ul class="tag-list + subpage-tag-list">
+                <ul class="tag-list subpage-tag-list">
                     <li class="lang-box-tag">HTML</li>
                     <li class="lang-box-tag">CSS</li>
                     <li class="lang-box-tag">Javascript</li>
@@ -131,7 +145,7 @@
                     <img class="social-icon" src="images/github-icon.png" alt="github">
                     <a href="https://github.com/ryanbey" target="_blank">GitHub</a>
                 </div>
-                <p id="copyright">&copy;2021 Ryan Bey</p>
+                <p id="copyright">&copy; 2021 Ryan Bey</p>
             </div>
         </section>
 
