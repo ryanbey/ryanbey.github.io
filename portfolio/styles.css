@@ -125,7 +125,8 @@ main {
 }
 
 .subpage-main {
-    margin-top: -8rem;
+    margin-top: -13rem;
+    font-size: 1.1em;
 }
 
 .black-bg {
@@ -157,13 +158,20 @@ main {
 /***********************
 *   Education
 ***********************/
-.education-grid {
+#education-flexbox {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
-#education > .section-content {
+.class-heading {
+    font-size: 1.2em;
+    margin-top: 0;
+    margin-bottom: .5em;
+}
+
+.class-p {
     margin: 0;
+    margin-bottom: 1em;
 }
 
 /***********************
@@ -182,7 +190,6 @@ main {
 /***********************
 *   Projects
 ***********************/
-
 #projects {
     background-image: url("images/circuit-bg.png");
     background-repeat: no-repeat;
@@ -273,6 +280,7 @@ main {
 
 .subpage-box-p {
     padding-left: 0;
+    margin-bottom: .1em;
 }
 
 .subpage-box-faded {
