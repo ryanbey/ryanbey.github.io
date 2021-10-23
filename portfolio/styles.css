@@ -291,31 +291,47 @@ main {
 }
 
 /***********************
-*   Carousel
+*   Carousels (so ugly don't look)
 ***********************/
-.carousel {
+.carousel-1, .carousel-2,
+.carousel-3, .carousel-4 {
     overflow: hidden;
     max-width: 600px;
     position: relative;
-  }
+}
   
-.carousel .carousel-item,
-.carousel .carousel-item-hidden {
+.carousel-1 .carousel-1-item,
+.carousel-2 .carousel-2-item,
+.carousel-3 .carousel-3-item,
+.carousel-4 .carousel-4-item,
+.carousel-1 .carousel-1-item-hidden,
+.carousel-2 .carousel-2-item-hidden,
+.carousel-3 .carousel-3-item-hidden,
+.carousel-4 .carousel-4-item-hidden {
     display: none;
 }
 
-.carousel .carousel-item img {
+.carousel-1 .carousel-1-item img,
+.carousel-2 .carousel-2-item img,
+.carousel-3 .carousel-3-item img,
+.carousel-4 .carousel-4-item img {
     width: 100%;
     max-width: 600px;
     height: auto;
 }
 
-.carousel .carousel-item-visible {
+.carousel-1 .carousel-1-item-visible,
+.carousel-2 .carousel-2-item-visible,
+.carousel-3 .carousel-3-item-visible,
+.carousel-4 .carousel-4-item-visible {
     display: block;
     animation: fadeVisibility 0.5s;
 }
 
-.carousel .carousel-actions {
+.carousel-1 .carousel-1-actions,
+.carousel-2 .carousel-2-actions,
+.carousel-3 .carousel-3-actions,
+.carousel-4 .carousel-4-actions {
     display: flex;
     width: 100%;
     justify-content: space-between;
@@ -324,7 +340,10 @@ main {
     transform: translateY(-50%);
 }
 
-.carousel .carousel-actions button {
+.carousel-1 .carousel-1-actions button,
+.carousel-2 .carousel-2-actions button,
+.carousel-3 .carousel-3-actions button,
+.carousel-4 .carousel-4-actions button {
     border: 0;
     font-weight: bold;
     cursor: pointer;
@@ -332,14 +351,26 @@ main {
     height: 40px;
 }
 
-.carousel .carousel-actions #carousel-button-prev,
-.carousel .carousel-actions #carousel-button-next {
+.carousel-1 .carousel-1-actions #carousel-1-button-prev,
+.carousel-1 .carousel-1-actions #carousel-1-button-next,
+.carousel-2 .carousel-2-actions #carousel-2-button-prev,
+.carousel-2 .carousel-2-actions #carousel-2-button-next,
+.carousel-3 .carousel-3-actions #carousel-3-button-prev,
+.carousel-3 .carousel-3-actions #carousel-3-button-next,
+.carousel-4 .carousel-4-actions #carousel-4-button-prev,
+.carousel-4 .carousel-4-actions #carousel-4-button-next {
     padding: 0;
     background: rgba(0, 0, 0, 75%);
 }
 
-.carousel .carousel-actions #carousel-button-prev:hover,
-.carousel .carousel-actions #carousel-button-next:hover {
+.carousel-1 .carousel-1-actions #carousel-1-button-prev:hover,
+.carousel-1 .carousel-1-actions #carousel-1-button-next:hover,
+.carousel-2 .carousel-2-actions #carousel-2-button-prev:hover,
+.carousel-2 .carousel-2-actions #carousel-2-button-next:hover,
+.carousel-3 .carousel-3-actions #carousel-3-button-prev:hover,
+.carousel-3 .carousel-3-actions #carousel-3-button-next:hover,
+.carousel-4 .carousel-4-actions #carousel-4-button-prev:hover,
+.carousel-4 .carousel-4-actions #carousel-4-button-next:hover {
     background: var(--color-black);
     color: var(--color-mint);
 }
@@ -639,7 +670,7 @@ button:hover {
         max-width: 100%;
     }
 
-    .contact-grid {
+    footer {
         display: block;
     }
 
@@ -655,5 +686,22 @@ button:hover {
     .contact-form-grid {
         display: block;
         max-width: 80%;
+    }
+}
+
+@media (max-width: 1200px) {
+    /* Projects Page*/
+    .projects-grid {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .projects-grid-right {
+        margin-top: 1em;
+    }
+
+    .subpage-tag-list {
+        margin-left: 0;
     }
 }
