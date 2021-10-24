@@ -705,6 +705,10 @@ button:hover {
         max-width: 80%;
     }
 
+    #education-flexbox {
+        flex-direction: column;
+    }
+
     #skills-flexbox {
         flex-direction: column;
     }
