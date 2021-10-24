@@ -71,7 +71,7 @@ header {
     display: flex;
     justify-content: center;
     pointer-events: none;
-    background-image: url("images/header-banner.png");
+    background-image: url("images/backgrounds/header-banner.png");
     background-position: 0px 63px;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -82,7 +82,7 @@ header {
 .subpage-header {
     background-image: linear-gradient(to bottom,
     rgba(0, 0, 0, 0), rgb(0, 0, 0, .3), rgba(0, 0, 0, 1)),
-    url('images/header-banner.png');
+    url('images/backgrounds/header-banner.png');
     background-attachment: scroll;
     background-position: 0px 0px;
 }
@@ -190,7 +190,7 @@ main {
 *   Projects
 ***********************/
 #projects {
-    background-image: url("images/circuit-bg.png");
+    background-image: url("images/backgrounds/circuit-bg.png");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
