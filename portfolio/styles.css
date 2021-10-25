@@ -190,7 +190,7 @@ main {
 *   Projects
 ***********************/
 #projects {
-    background-image: url("images/backgrounds/circuit-bg.png");
+    background-image: url("images/backgrounds/circuit-bg.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -448,6 +448,10 @@ main {
     grid-column: 1/3;
     grid-row: 2;
 }
+
+/***********************
+*   About Me
+***********************/
 
 
 /***********************
