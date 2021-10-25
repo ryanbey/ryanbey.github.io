@@ -455,7 +455,37 @@ main {
 /***********************
 *   About Me
 ***********************/
+.hobby-box {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 1.2em;
+    font-weight: 400;
+    background: var(--color-gray);
+    padding: .8em;
+    margin-right: 1em;
+    margin-bottom: 1em;
+    zoom: 93%;
+}
 
+.hobby-box img {
+    max-width: 40px;
+}
+
+.hobby-box p {
+    margin: 0;
+    margin-left: 1em;
+}
+
+.hobby-box:hover {
+    background: #333333;
+    transition: all 300ms;
+}
+
+.hobby-container {
+    display: flex;
+    flex-wrap: wrap;
+}
 
 /***********************
 *   Certificates
@@ -531,9 +561,15 @@ footer {
 }
 
 #copyright {
-    margin-top: 6em;
+    margin-top: 4em;
     margin-bottom: 0;
     font-size: .9em;
+}
+
+#icons {
+    font-size: .8em;
+    color: #008f8f;
+    margin-bottom: 0;
 }
 
 /***********************
