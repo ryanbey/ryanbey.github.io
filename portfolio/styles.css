@@ -485,7 +485,22 @@ main {
 .hobby-container {
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 35rem;
 }
+
+.sim-racing-hover {
+    background-image: linear-gradient(to top,
+        rgba(0, 0, 0, 0), rgb(0, 0, 0, .1), rgba(0, 0, 0, 1)),
+        url('images/iracing/iracing-old-large.jpg');
+    background-position: center 220px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: 1920px 80%;
+}
+
+/* TODO: Add hovers for other hobby buttons, also create the actual freakin images */
+/* Also do some rocket science to get these background images to fade in please thanks */
+/* IDEA: set a default image, then on hover, add a border to the active hobby */
 
 /***********************
 *   Certificates
