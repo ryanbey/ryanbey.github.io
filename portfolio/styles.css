@@ -37,7 +37,7 @@ nav {
     padding: .39em;
     position: sticky;
     top: 0;
-    z-index: 100;
+    z-index: 999;
     background: rgba(0, 0, 0, 75%);
 }
 
