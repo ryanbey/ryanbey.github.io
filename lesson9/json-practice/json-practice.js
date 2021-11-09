@@ -26,6 +26,7 @@ fetch(requestURL)
             birthPlace.textContent = "Date of Birth: " + prophets[i].birthdate;
             card.appendChild(birthDate);
             image.setAttribute('src', prophets[i].imageurl);
+            image.setAttribute('alt', prophets[i].name + " " + prophets[i].lastname + " - " + (i + 1));
             card.appendChild(image);
       
             document.querySelector('div.cards').appendChild(card);
