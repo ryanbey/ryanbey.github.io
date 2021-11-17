@@ -26,21 +26,32 @@ fetch(requestURL)
 
                 // apply our info box styling to the town sections
                 townBox.classList.add('info-box');
+                townBox.classList.add('home-info-box');
 
                 // fill in content
                 heading.textContent = towns[i].name;
+                heading.classList.add('home-heading');
                 townBox.appendChild(heading);
 
                 motto.textContent = towns[i].motto;
+                motto.classList.add('home-subheading');
                 townBox.appendChild(motto);
 
+                image.setAttribute('src', towns[i].photo);
+                image.setAttribute('alt', towns[i].name + ' picture');
+                image.classList.add('home-img');
+                townBox.appendChild(image);
+
                 founded.textContent = "Year Founded: " + towns[i].yearFounded;
+                motto.classList.add('home-founded');
                 townBox.appendChild(founded);
 
                 population.textContent = "Population: " + towns[i].currentPopulation;
+                motto.classList.add('home-population');
                 townBox.appendChild(population);
 
                 rainfall.textContent = "Annual Rainfall: " + towns[i].averageRainfall;
+                motto.classList.add('home-rainfall');
                 townBox.appendChild(rainfall);
 
                 /*******************************************************************

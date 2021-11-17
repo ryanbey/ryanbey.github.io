@@ -15,7 +15,7 @@
     },
     {
       "name": "Fish Haven",
-      "photo": "images/fishhaven-home.jpg",
+      "photo": "images/fish-haven-home.jpg",
       "motto": "This is Fish Heaven.",
       "yearFounded": 1864,
       "currentPopulation": 501,
@@ -68,7 +68,7 @@
     },
     {
       "name": "Soda Springs",
-      "photo": "images/sodasprings-home.jpg",
+      "photo": "images/soda-springs-home.jpg",
       "motto": "Historic Oregon Trail Oasis.",
       "yearFounded": 1858,
       "currentPopulation": 2985,
