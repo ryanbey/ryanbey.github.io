@@ -17,6 +17,8 @@ fetch(requestURL)
             if (i == 1 | i == 4 | i == 5) {
                 // create html elements to fill in
                 let townBox = document.createElement('section');
+                let townBoxImage = document.createElement('div');
+                let townBoxInfo = document.createElement('div');
                 let heading = document.createElement('h2');
                 let motto = document.createElement('h3');
                 let founded = document.createElement('p');
@@ -25,40 +27,39 @@ fetch(requestURL)
                 let image = document.createElement('img');
 
                 // apply our info box styling to the town sections
-                townBox.classList.add('info-box');
-                townBox.classList.add('home-info-box');
+                townBox.classList.add('info-box', 'home-info-box');
+                townBoxImage.classList.add('town-box-image');
+                townBoxInfo.classList.add('town-box-info');
 
                 // fill in content
-                heading.textContent = towns[i].name;
-                heading.classList.add('home-heading');
-                townBox.appendChild(heading);
-
-                motto.textContent = towns[i].motto;
-                motto.classList.add('home-subheading');
-                townBox.appendChild(motto);
-
                 image.setAttribute('src', towns[i].photo);
                 image.setAttribute('alt', towns[i].name + ' picture');
                 image.classList.add('home-img');
-                townBox.appendChild(image);
+                townBoxImage.appendChild(image);
+
+                heading.textContent = towns[i].name;
+                heading.classList.add('home-heading');
+                townBoxInfo.appendChild(heading);
+
+                motto.textContent = towns[i].motto;
+                motto.classList.add('home-subheading');
+                townBoxInfo.appendChild(motto);
 
                 founded.textContent = "Year Founded: " + towns[i].yearFounded;
                 motto.classList.add('home-founded');
-                townBox.appendChild(founded);
+                townBoxInfo.appendChild(founded);
 
                 population.textContent = "Population: " + towns[i].currentPopulation;
                 motto.classList.add('home-population');
-                townBox.appendChild(population);
+                townBoxInfo.appendChild(population);
 
                 rainfall.textContent = "Annual Rainfall: " + towns[i].averageRainfall;
                 motto.classList.add('home-rainfall');
-                townBox.appendChild(rainfall);
-
-                /*******************************************************************
-                * ADD IMAGES ADD IMAGES ADD IMAGES ADD IMAGES ADD IMAGES ADD IMAGES
-                *******************************************************************/
-
+                townBoxInfo.appendChild(rainfall);
+                
                 // add content to our div in html file
+                townBox.appendChild(townBoxImage);
+                townBox.appendChild(townBoxInfo);
                 document.querySelector('div.town-boxes').appendChild(townBox);
             }
         }
