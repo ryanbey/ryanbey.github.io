@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="preston.css"/>
+    <link rel="stylesheet" href="../../css/normalize.css">
+    <link rel="shortcut icon" href="../../weather-site-plan/images/favicon.png"/>
+    <title>mist | Preston, ID</title>
+</head>
+
+<body>
+    <header>
+        <noscript class="js-required">Javascript is required to enhance the features of this page</noscript>
+        <div class="pancake"></div>
+
+        <div class="header-content">
+            <img id="header-logo" src="../../weather-site-plan/images/header-logo.png" alt="Mist header logo">
+            <p id="motto">weather is cool</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul class="navigation">
+            <li><a class="menu" href="#" ><img id="hamburger-icon" src="images/hamburger-icon.png" alt="hamburger menu icon">Menu</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li class="active-page"><a href="#">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="stormcenter.html">Storm Center</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1 class="town-page-heading">Preston, ID</h1>
+        <div class="hero-image">
+            <picture>
+                <source srcset="images/hero-700.jpg" media="(min-width: 700px) and (max-width: 899px)">
+                <source srcset="images/hero-1000.jpg" media="(min-width: 900px)">
+                <img src="images/hero-400.jpg" alt="preston hero image">
+            </picture>
+
+            <div id="weather-summary" class="info-box-transparent">
+                <h2 class="info-box-heading">Weather Summary</h2>
+                <ul class="info-box-li">
+                    <li>Currently: <span id="ws-currently">31</span>&deg;F</li>
+                    <li>High: <span id="ws-high">70</span>&deg;F</li>
+                    <li>Wind Chill: <span id="ws-wind-chill"></span></li>
+                    <li>Humidity: <span id="ws-humidity">50</span>%</li>
+                    <li>Wind Speed: <span id="ws-wind-speed">5</span> mph</li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="five-day-box" class="info-box">
+            <h2 class="info-box-heading">5 Day Forecast</h2>
+            <div id="five-day-forecast">
+                <div class="forecast-box">
+                    <img class="weather-icon" src="images/weather-sunny.png" alt="forecast image">
+                    <h4 class="forecast-day">Day</h4>
+                    <p class="forecast-info">55&deg;</p>
+                </div>
+                <div class="forecast-box">
+                    <img class="weather-icon" src="images/weather-sunny.png" alt="forecast image">
+                    <h4 class="forecast-day">Day</h4>
+                    <p class="forecast-info">55&deg;</p>
+                </div>
+                <div class="forecast-box">
+                    <img class="weather-icon" src="images/weather-sunny.png" alt="forecast image">
+                    <h4 class="forecast-day">Day</h4>
+                    <p class="forecast-info">55&deg;</p>
+                </div>
+                <div class="forecast-box">
+                    <img class="weather-icon" src="images/weather-sunny.png" alt="forecast image">
+                    <h4 class="forecast-day">Day</h4>
+                    <p class="forecast-info">55&deg;</p>
+                </div>
+                <div class="forecast-box">
+                    <img class="weather-icon" src="images/weather-sunny.png" alt="forecast image">
+                    <h4 class="forecast-day">Day</h4>
+                    <p class="forecast-info">55&deg;</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="info-box">
+            <img class="article-image" src="images/placeholder-article-img.png" alt="article image">
+            <h3 class="article-heading">Article Title</h3>
+            <p class="article-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem aut, ipsa cumque fugit repudiandae ex reprehenderit eos molestias necessitatibus minus alias? In obcaecati necessitatibus accusantium eveniet explicabo? Libero, veniam nobis.</p>
+            <a class="article-link" href="#">Continue to full article</a>
+        </div>
+
+        <div class="info-box">
+            <h3 class="info-box-heading">Contact Us</h3>
+            <p class="contact-info">100 N 100 W<br>Idaho City, ID<br><br>(123) 456-7890<br>mistweather@email.com</p>
+        </div>
+
+        <script src="preston.js"></script>
+    </main>
+
+    <footer>
+        <p id="current-year"></p>
+        <p id="last-updated"></p>
+    </footer>
+
+    <script src="toggle-menu.js"></script>
+    <script src="last-updated.js"></script>
+</body>
+</html>
