@@ -1,4 +1,4 @@
-const fiveDayURL = "http://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=d62090c152500bb24998f65e1b56640a&units=imperial";
+const fiveDayURL = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=d62090c152500bb24998f65e1b56640a&units=imperial";
 
 fetch(fiveDayURL)
     .then((response) => response.json())
