@@ -1,4 +1,4 @@
-const fiveDayURL = "http://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=d62090c152500bb24998f65e1b56640a";
+const fiveDayURL = "http://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=d62090c152500bb24998f65e1b56640a&units=imperial";
 
 fetch(fiveDayURL)
     .then((response) => response.json())
@@ -7,13 +7,11 @@ fetch(fiveDayURL)
         console.log(jsObject);
 
         // 5-day Forecast
-        let index = 0;
+        let index = 1;
         let dayName = "Day";
 
         for(let i = 0; i < jsObject.list.length; i++) {
             if(jsObject.list[i].dt_txt.includes('18:00:00')) {
-                index++;
-
                 // Weather Icon
                 let iconSrc = jsObject.list[i].weather[0].icon + '.png'
                 let altText = jsObject.list[i].weather[0].decription + ' icon';
@@ -21,7 +19,7 @@ fetch(fiveDayURL)
                 document.getElementById(iconID).setAttribute('src', "https://openweathermap.org/img/w/" + iconSrc);
                 document.getElementById(iconID).setAttribute('alt', altText);
 
-                // Day of the week
+                // Day
                 let date = new Date(jsObject.list[i].dt_txt)
                 let dayValue = date.getDay();
 
@@ -40,14 +38,11 @@ fetch(fiveDayURL)
                 document.getElementById(dayID).innerText = dayName;
 
                 // Temperature
-                let tempValue = convertToF(jsObject.list[i].main.temp.toFixed(0));
+                let tempValue = jsObject.list[i].main.temp.toFixed(0);
                 let tempID = 'forecast-temp-' + index;
                 document.getElementById(tempID).innerText = tempValue + '°F';
+
+                index++;
             }
         }           
     });
-
-function convertToF(tempK) {
-    let tempF = (tempK - 273.15) * 9 / 5 + 32;
-    return tempF.toFixed(0);
-}
