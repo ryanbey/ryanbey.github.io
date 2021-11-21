@@ -46,10 +46,10 @@
                 <h2 class="info-box-heading">Weather Summary</h2>
                 <ul class="info-box-li">
                     <li>Currently: <span id="ws-currently"></span></li>
-                    <li>High: <span id="ws-high"></span>&deg;F</li>
-                    <li>Wind Chill: <span id="ws-wind-chill"></span></li>
+                    <li>Current: <span id="ws-current"></span>&deg;F</li>
                     <li>Humidity: <span id="ws-humidity"></span>%</li>
                     <li>Wind Speed: <span id="ws-wind-speed"></span> mph</li>
+                    <li>Wind Chill: <span id="ws-wind-chill"></span></li>
                 </ul>
             </div>
         </div>
@@ -58,29 +58,29 @@
             <h2 class="info-box-heading">5 Day Forecast</h2>
             <div id="five-day-forecast">
                 <div class="forecast-box">
-                    <img class="weather-icon" src="images/weather-sunny.png" alt="forecast image">
-                    <h4 class="forecast-day">Day</h4>
-                    <p class="forecast-info">55&deg;</p>
+                    <img id="weather-icon-1" src="images/weather-sunny.png" alt="forecast image">
+                    <h4 id="forecast-day-1">Day</h4>
+                    <p id="forecast-temp-1"></p>
                 </div>
                 <div class="forecast-box">
-                    <img class="weather-icon" src="images/weather-sunny.png" alt="forecast image">
-                    <h4 class="forecast-day">Day</h4>
-                    <p class="forecast-info">55&deg;</p>
+                    <img id="weather-icon-2" src="images/weather-sunny.png" alt="forecast image">
+                    <h4 id="forecast-day-2">Day</h4>
+                    <p id="forecast-temp-2"></p>
                 </div>
                 <div class="forecast-box">
-                    <img class="weather-icon" src="images/weather-sunny.png" alt="forecast image">
-                    <h4 class="forecast-day">Day</h4>
-                    <p class="forecast-info">55&deg;</p>
+                    <img id="weather-icon-3" src="images/weather-sunny.png" alt="forecast image">
+                    <h4 id="forecast-day-3">Day</h4>
+                    <p id="forecast-temp-3"></p>
                 </div>
                 <div class="forecast-box">
-                    <img class="weather-icon" src="images/weather-sunny.png" alt="forecast image">
-                    <h4 class="forecast-day">Day</h4>
-                    <p class="forecast-info">55&deg;</p>
+                    <img id="weather-icon-4" src="images/weather-sunny.png" alt="forecast image">
+                    <h4 id="forecast-day-4">Day</h4>
+                    <p id="forecast-temp-4"></p>
                 </div>
                 <div class="forecast-box">
-                    <img class="weather-icon" src="images/weather-sunny.png" alt="forecast image">
-                    <h4 class="forecast-day">Day</h4>
-                    <p class="forecast-info">55&deg;</p>
+                    <img id="weather-icon-5" src="images/weather-sunny.png" alt="forecast image">
+                    <h4 id="forecast-day-5">Day</h4>
+                    <p id="forecast-temp-5"></p>
                 </div>
             </div>
         </div>
@@ -96,8 +96,6 @@
             <h3 class="info-box-heading">Contact Us</h3>
             <p class="contact-info">100 N 100 W<br>Idaho City, ID<br><br>(123) 456-7890<br>mistweather@email.com</p>
         </div>
-
-        <script src="preston.js"></script>
     </main>
 
     <footer>
@@ -105,7 +103,10 @@
         <p id="last-updated"></p>
     </footer>
 
-    <script src="toggle-menu.js"></script>
     <script src="last-updated.js"></script>
+    <script src="toggle-menu.js"></script>
+    <script src="weather-summary.js"></script>
+    <script src="five-day.js"></script>
+
 </body>
 </html>

@@ -1,25 +1,23 @@
-const apiURL = "http://api.openweathermap.org/data/2.5/weather?id=5604473&appid=d62090c152500bb24998f65e1b56640a";
+const summaryURL = "http://api.openweathermap.org/data/2.5/weather?id=5604473&appid=d62090c152500bb24998f65e1b56640a";
 
-fetch(apiURL)
+fetch(summaryURL)
     .then((response) => response.json())
     .then((jsObject) => {
+        console.log('Weather summary API loaded');
         console.log(jsObject);
 
         // Weather Summary
         let currently = jsObject.weather[0].description;
-        let high = convertToF(jsObject.main.temp_max);
-        let windChill = calcWindChill(jsObject.wind.speed, high);
+        let current = convertToF(jsObject.main.temp);
+        let windChill = calcWindChill(jsObject.wind.speed, current);
         let humidity = jsObject.main.humidity;
         let windSpeed = jsObject.wind.speed;
 
         document.querySelector('#ws-currently').innerText = titleCase(currently);
-        document.querySelector('#ws-high').innerText = high;
+        document.querySelector('#ws-current').innerText = current;
         document.querySelector('#ws-wind-chill').innerText = windChill + "°F";
         document.querySelector('#ws-humidity').innerText = humidity;
         document.querySelector('#ws-wind-speed').innerText = windSpeed.toFixed(0);
-
-        // 5-day Forecast
-        
     });
 
 function convertToF(tempK) {
@@ -30,7 +28,6 @@ function convertToF(tempK) {
 function calcWindChill(speed, temp) {
     // Compute the windchill
     let wc = 35.74 + 0.6215 * temp - 35.75 * Math.pow(speed, 0.16) + 0.4275 * temp * Math.pow(speed, 0.16);
-    console.log(wc);
     // Round the answer down to integer
     wc = Math.floor(wc);
     // If chill is greater than temp, return the temp
