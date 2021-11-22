@@ -86,27 +86,42 @@
         </div>
 
         <div class="info-box">
-            <img class="article-image" src="images/placeholder-article-img.png" alt="article image">
-            <h3 class="article-heading">Article Title</h3>
-            <p class="article-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem aut, ipsa cumque fugit repudiandae ex reprehenderit eos molestias necessitatibus minus alias? In obcaecati necessitatibus accusantium eveniet explicabo? Libero, veniam nobis.</p>
-            <a class="article-link" href="#">Continue to full article</a>
+            <div class="article-flexbox">
+                <div class="article-left">
+                    <img class="article-image" src="images/placeholder-article-img.png" alt="article image">
+                </div>
+                <div class="article-right">
+                    <h3 class="article-heading">Article Title</h3>
+                    <p class="article-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem aut, ipsa cumque fugit repudiandae ex reprehenderit eos molestias necessitatibus minus alias? In obcaecati necessitatibus accusantium eveniet explicabo? Libero, veniam nobis.</p>
+                    <a class="article-link" href="#">Continue to full article</a>
+                </div>
+            </div>
         </div>
 
-        <div class="info-box">
-            <h3 class="info-box-heading">Events</h3>
-            <p><span id="events"></span></p>
-        </div>
-
-        <div class="info-box">
-            <h3 class="info-box-heading">Contact Us</h3>
-            <p class="contact-info">100 N 100 W<br>Idaho City, ID<br><br>(123) 456-7890<br>mistweather@email.com</p>
+        <div class="info-contact-flexbox">
+            <div class="info-box">
+                <h3 class="info-box-heading">Events</h3>
+                <p><span id="events"></span></p>
+            </div>
+    
+            <div class="info-box">
+                <h3 class="info-box-heading">Contact Us</h3>
+                <p class="contact-info">100 N 100 W<br>Idaho City, ID<br><br>(123) 456-7890<br>mistweather@email.com</p>
+            </div>
         </div>
     </main>
 
     <footer>
-        <p id="current-year"></p>
-        <p id="last-updated"></p>
-        <p>Powered by <a href="https://openweathermap.org/">OpenWeather</a></p>
+        <div class="footer-left">
+            <p id="current-year"></p>
+            <p id="last-updated"></p>
+            <p>Powered by <a href="https://openweathermap.org/">OpenWeather</a></p>
+        </div>
+
+        <div class="footer-right">
+            <!-- ADD MAP IN FOOTER PLEASE THANK YOU BYE -->
+            <img class="footer-map" src="https://via.placeholder.com/250x150" alt="alt">
+        </div>
     </footer>
 
     <script src="last-updated.js"></script>

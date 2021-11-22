@@ -259,6 +259,11 @@ footer {
     font-size: .9em;
 }
 
+.footer-map {
+    border-radius: 10px;
+    margin: .5em;
+}
+
 .image-caption {
     display: none;
 }
@@ -343,6 +348,16 @@ input {
         max-width: 90%;
     }
 
+    .article-flexbox {
+        display: flex;
+        justify-content: center;
+    }
+
+    .article-right {
+        margin-top: 1em;
+        width: 50%;
+    }
+
     .gallery-main {
         margin-left: auto;
         margin-right: auto;
@@ -395,6 +410,19 @@ input {
 
     .home-img {
         border-radius: 10px;
+    }
+
+    /* FIX THIS LATER */
+    /* .info-contact-flexbox {
+        display: flex;
+        justify-content: space-around;
+    } */
+
+    footer {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        text-align: left;
     }
 }
 
@@ -455,6 +483,16 @@ input {
         top: 20px;
         left: 20px;
         z-index: 100;
+    }
+
+    .article-flexbox {
+        display: flex;
+        justify-content: center;
+    }
+
+    .article-right {
+        margin-top: 1em;
+        width: 50%;
     }
 
     .gallery-main {
