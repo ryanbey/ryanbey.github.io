@@ -1,0 +1,93 @@
+/* Fonts - Roboto & Kaushan Script*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* Colors */
+:root {
+    --color-blue: #002A3C;
+    --color-green: #1F7655;
+    --color-mint: #A7E2CE;
+    --color-black: black;
+    --color-white: white;
+    --color-offw: #f5f5f5;
+}
+
+/*****************************************************************************
+*                                 GENERAL
+*****************************************************************************/
+body {
+    background: var(--color-offw);
+    font-family: "Roboto", sans-serif;
+    max-width: 100%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    background: var(--color-blue);
+    color: white;
+}
+
+.nav-logo {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 1em;
+}
+
+nav li {
+    padding-right: 1.5em;
+    padding-left: 1.5em;
+}
+
+header {
+    display: flex;
+    margin: 0;
+}
+
+.banner-cursive {
+    font-family: "Kaushan Script", sans-serif;
+    font-size: 9rem;
+    margin-bottom: 0;
+    position: relative;
+    left: -100px;
+}
+
+.banner-heading {
+    font-weight: 300;
+    font-style: italic;
+    font-size: 4rem;
+    margin: 0;
+    position: relative;
+}
+
+#banner-heading-1 {
+    position: relative;
+}
+
+#banner-heading-2 {
+    position: relative;
+    left: 100px;
+    margin-bottom: 1em;
+}
+
+.divider {
+    width: 90px;
+    height: 10px;
+    background: var(--color-green);
+    margin-bottom: 2em;
+}
+
+/* ABOUT US */
+.about-us {
+    background: var(--color-white);
+    margin: 0;
+    padding: 2rem;
+}
