@@ -44,20 +44,39 @@ nav ul {
     justify-content: center;
     align-items: center;
     list-style: none;
-    padding: 0;
-    margin: 1em;
 }
 
-nav li {
-    padding-right: 1.5em;
-    padding-left: 1.5em;
+.nav-link, .nav-link:visited{
+    color: var(--color-white);
+    text-decoration: none;
+    padding: .7em;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.nav-link:hover {
+    background: var(--color-offw);
+    color: var(--color-blue);
+    transition: background 300ms;
+}
+
+.active-page {
+    border-bottom: solid 6px var(--color-mint);
 }
 
 header {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
+    max-width: 100%;
     margin: 0;
+}
+
+.header-right {
+    position: absolute;
+    top: 90px;
+    left: 50%;
+}
+
+.banner-img {
+    max-width: 100%;
 }
 
 .banner-cursive {
@@ -65,8 +84,6 @@ header {
     font-size: 9rem;
     margin-top: 0;
     margin-bottom: 0;
-    position: relative;
-    left: -100px;
 }
 
 .banner-heading {
@@ -74,16 +91,16 @@ header {
     font-style: italic;
     font-size: 4rem;
     margin: 0;
-    position: relative;
 }
 
 #banner-heading-1 {
     position: relative;
+    left: 75px;
 }
 
 #banner-heading-2 {
     position: relative;
-    left: 100px;
+    left: 150px;
     margin-bottom: .5em;
 }
 
@@ -104,9 +121,12 @@ button {
     text-decoration: none;
     display: inline-block;
     font-size: 24px;
-    position: relative;
     zoom: 125%;
-    left: 150px;
+}
+
+#header-button {
+    position: relative;
+    left: 175px;
 }
 
 /* ABOUT US */
