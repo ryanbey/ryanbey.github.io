@@ -4,13 +4,13 @@
 
 /* Colors */
 :root {
+    --color-black: black;
+    --color-text: #080808;
     --color-blue: #002A3C;
     --color-green: #1F7655;
     --color-mint: #A7E2CE;
-    --color-black: black;
+    --color-offw: #e8e8e8;
     --color-white: white;
-    --color-offw: #f5f5f5;
-    --color-text: #080808;
 }
 
 /*****************************************************************************
@@ -32,11 +32,11 @@ nav {
     position: sticky;
     top: 0;
     z-index: 999;
+    align-items: center;
 }
 
 .nav-logo {
-    margin-top: 5px;
-    margin-bottom: 5px;
+    height: 45px;
 }
 
 nav ul {
@@ -49,39 +49,38 @@ nav ul {
 .nav-link, .nav-link:visited{
     color: var(--color-white);
     text-decoration: none;
-    padding: .7em;
-    padding-left: 1em;
-    padding-right: 1em;
+    padding: 1em;
+    padding-bottom: .8rem;
 }
 
 .nav-link:hover {
-    background: var(--color-offw);
-    color: var(--color-blue);
-    transition: background 300ms;
+    color: var(--color-mint);
+    transition: color 300ms;
 }
 
 .active-page {
     border-bottom: solid 6px var(--color-mint);
 }
 
-header {
+.header-background {
+    background-image:
+        linear-gradient(to left, var(--color-offw), rgba(255, 255, 255, 0)),
+        url('images/banner-img.jpg');
+    background-size: 1000px;
+    background-repeat: no-repeat;
     max-width: 100%;
-    margin: 0;
+    height: 500px;
 }
 
-.header-right {
+.header-content {
     position: absolute;
-    top: 90px;
     left: 50%;
-}
-
-.banner-img {
-    max-width: 100%;
+    top: 12%;
 }
 
 .banner-cursive {
     font-family: "Kaushan Script", sans-serif;
-    font-size: 9rem;
+    font-size: 8rem;
     margin-top: 0;
     margin-bottom: 0;
 }
@@ -101,14 +100,7 @@ header {
 #banner-heading-2 {
     position: relative;
     left: 150px;
-    margin-bottom: .5em;
-}
-
-.divider {
-    width: 90px;
-    height: 10px;
-    background: var(--color-green);
-    margin-bottom: 2em;
+    margin-bottom: 1rem;
 }
 
 button {
@@ -120,18 +112,207 @@ button {
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 24px;
-    zoom: 125%;
+}
+
+button:hover {
+    background: var(--color-mint);
+    color: var(--color-blue);
+    transition: all 300ms;
+    cursor: pointer;
 }
 
 #header-button {
     position: relative;
     left: 175px;
+    zoom: 125%;
 }
 
-/* ABOUT US */
-.about-us {
-    background: var(--color-white);
+.section-content {
+    max-width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    font-size: 1.2em;
+}
+
+.section-heading {
     margin: 0;
-    padding: 2rem;
+    margin-bottom: .3em;
+    font-size: 2em;
+}
+
+.divider {
+    width: 70px;
+    height: 10px;
+    background: var(--color-green);
+    margin-bottom: 2em;
+}
+
+.white-bg {
+    background: var(--color-white);
+}
+
+.blue-bg {
+    background: var(--color-blue);
+    color: var(--color-white);
+}
+
+.menu {
+    display: none;
+}
+
+/****************************
+*         ABOUT US
+****************************/
+#about-us-p {
+    font-size: 1.2em;
+    line-height: 1.2em;
+}
+
+
+/****************************
+*        SPOTLIGHT
+****************************/
+.spotlight {
+    background-image: url("images/spotlight-bg.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    padding-bottom: 2em;
+}
+
+#spotlight-boxes {
+    display: flex;
+    justify-content: space-between;
+}
+
+.spotlight-business {
+    background: var(--color-white);
+    display: flex;
+    flex-direction: column;
+    max-width: 350px;
+    border-radius: 5px;
+}
+
+.business-img {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.business-heading, .business-desc, .business-web {
+    margin: 1.5rem;
+}
+
+.business-desc, .business-web {
+    margin-top: 0;
+}
+
+.spotlight-business a {
+    color: var(--color-green);
+}
+
+.spotlight-business a:visited {
+    color: var(--color-green);
+}
+
+/****************************
+*          EVENTS
+****************************/
+.side-by-side {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+#events-content {
+    padding-left: 35%;
+}
+
+#weather-content {
+    margin-left: 4em;
+}
+
+.events-box {
+    padding: 0;
+    border-top: 1px solid var(--color-offw);
+    width: 75%;
+    display: flex;
+    margin-bottom: 1em;
+}
+
+.calendar-box {
+    height: 65px;
+    width: 75px;
+    background: var(--color-offw);
+    border-top: solid 10px var(--color-mint);
+    border-radius: 0px 0px 5px 5px;
+    text-align: center;
+}
+
+.calendar-month {
+    text-align: center;
+    margin-top: 17px;
+}
+
+.calendar-days {
+    margin-left: .5em;
+}
+
+.calendar-days ul li {
+    list-style: none;
+    margin-bottom: .5em;
+}
+
+/****************************
+*          WEATHER
+****************************/
+.weather-heading {
+    margin-top: 2em;
+}
+
+.weather-boxes {
+    display: flex;
+}
+
+.weather-box {
+    background: var(--color-mint);
+    border-radius: 5px;
+    color: var(--color-blue);
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    margin-right: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.forecast-temp {
+    display: inline-block;
+    font-weight: 500;
+    font-size: 1.5em;
+    color: var(--color-green);
+}
+
+/****************************
+*          FOOTER
+****************************/
+footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.social-icon {
+    position: relative;
+    bottom: 0;
+    transition: bottom 200ms;
+}
+
+.social-icon:hover {
+    bottom: 5px;
+}
+
+#footer-button {
+    margin-top: 4em;
 }
