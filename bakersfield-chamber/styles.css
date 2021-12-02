@@ -13,9 +13,9 @@
     --color-white: white;
 }
 
-/*****************************************************************************
+/**************************************************************************
 *                                 GENERAL
-*****************************************************************************/
+**************************************************************************/
 body {
     background: var(--color-offw);
     font-family: "Roboto", sans-serif;
@@ -315,4 +315,183 @@ footer {
 
 #footer-button {
     margin-top: 4em;
+}
+
+/**************************************************************************
+*                                 TABLET
+**************************************************************************/
+@media (max-width: 1024px) {
+    .header-background {
+        background-image:
+            linear-gradient(to top, var(--color-white), rgba(255, 255, 255, 0)),
+            url('images/banner-img.jpg');
+        background-size: 1000px;
+        background-repeat: no-repeat;
+        max-width: 100%;
+        height: 500px;
+    }
+    
+    .header-content {
+        position: absolute;
+        left: 20%;
+        filter: drop-shadow(0px 10px 10px rgba(255, 255, 255, 1));
+        zoom: 90%;
+    }
+
+    #spotlight-boxes {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .spotlight-business {
+        background: var(--color-white);
+        display: grid;
+        grid-template-columns: 60% 40%;
+        max-width: 90%;
+        border-radius: 5px;
+        margin-bottom: 1.5em;
+    }
+    
+    .business-img {
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        grid-column: 1;
+        grid-row: 1 / 4;
+    }
+    
+    .business-heading {
+        grid-column: 2;
+        margin-bottom: 0;
+    }
+    
+    .business-desc {
+        grid-column: 2;
+        margin-bottom: .2em;
+    }
+
+    .business-web {
+        grid-column: 2;
+        margin-bottom: 0;
+    }
+
+    .side-by-side {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    
+    #events-content {
+        grid-row: 1;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    
+    #weather-content {
+        grid-row: 2;
+        margin-left: 11rem;
+    }
+}
+
+@media (max-width: 950px) {
+    #spotlight-boxes {
+        flex-direction: column;
+    }
+
+    .spotlight-business {
+        background: var(--color-white);
+        display: flex;
+        flex-direction: column;
+        max-width: 400px;
+        border-radius: 5px;
+        margin-bottom: 1.5em;
+    }
+    
+    .business-img {
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        grid-column: 1;
+        grid-row: 1 / 4;
+    }
+    
+    .business-heading {
+        grid-column: 2;
+        margin-bottom: 1em;
+    }
+    
+    .business-desc {
+        grid-column: 2;
+        margin-bottom: 1em;
+    }
+
+    .business-web {
+        grid-column: 2;
+        margin-bottom: 1em;
+    }
+}
+
+/**************************************************************************
+*                                MOBILE
+**************************************************************************/
+@media (max-width: 700px) {
+    .header-content {
+        left: 15%;
+        top: 25%;
+        filter: drop-shadow(0px 5px 10px rgba(255, 255, 255, 1));
+        zoom: 50%;
+    }
+
+    .section-content {
+        max-width: 80%;
+    }
+
+    #about-us-p {
+        font-size: 1em;
+    }
+
+    #header-button {
+        zoom: 200%;
+        left: 20%;
+    }
+
+    #weather-content {
+        margin-left: 10%;
+    }
+
+    footer {
+        display: grid;
+    }
+
+    nav {
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #hamburger-icon {
+        width: 30px;
+        margin: .5em;
+        margin-right: 1em;
+    }
+    
+    .menu, .navigation li:first-child{
+        display: block;
+    }
+    
+    .navigation li {
+        display: none;
+    }
+
+    .navigation {
+        display: block;
+        margin: 0;
+    }
+
+    .responsive li {
+        /* Toggles with JS */
+        display: block;
+        margin-bottom: 1.5em;
+    }
+
+    .active-page {
+        border-left: solid 6px var(--color-mint);
+        border-bottom: 0;
+    }
 }

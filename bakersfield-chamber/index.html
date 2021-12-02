@@ -9,11 +9,15 @@
     <title>Home | Bakersfield Chamber</title>
 </head>
 
+<!-- TO DO: weather alerts if available (applicable) from the government 
+    and display it as a closeable message at the top of the page. 
+    (closeable means the user can click to remove the alert) -->
+
 <body>
     <nav>
         <img class="nav-logo" src="images/nav-logo.png" alt="navigation bar logo">
         <ul class="navigation">
-            <li><a class="menu" href="#"><img id="hamburger-icon" src="images/icons/hamburger-icon.png" alt="hamburger menu icon"></a></li>
+            <li><a class="menu" href="#"><img id="hamburger-icon" src="images/hamburger-icon.png" alt="hamburger menu icon"></a></li>
             <li><a class="nav-link active-page" href="#">Home</a></li>
             <li><a class="nav-link" href="bakersfield.html">Bakersfield</a></li>
             <li><a class="nav-link" href="join.html">Join</a></li>
@@ -28,7 +32,7 @@
                 <h1 class="banner-cursive">Discover</h1>
                 <h2 id="banner-heading-1" class="banner-heading">A Better</h2>
                 <h2 id="banner-heading-2" class="banner-heading">Bakersfield</h2>
-                <button id="header-button" class="join-button">JOIN TODAY</button>
+                <button id="header-button" class="join-button" onclick="location.href='join.html'">JOIN TODAY</button>
             </div>
         </div>
     </header>
@@ -157,10 +161,11 @@
                 <a href="https://www.instagram.com/bakochamber/" target="_blank"><img class="social-icon" src="images/instagram.png" alt="social icon"></a>
                 <a href="https://www.youtube.com/user/BakersfieldChamber" target="_blank"><img class="social-icon" src="images/youtube.png" alt="social icon"></a>
             </div>
-            <button id="footer-button" class="join-button">JOIN TODAY</button>
+            <button id="footer-button" class="join-button" onclick="location.href='join.html'">JOIN TODAY</button>
         </div>
     </footer>
 
     <script src="weather.js"></script>
+    <script src="hamburger.js"></script>
 </body>
 </html>
