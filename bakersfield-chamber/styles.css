@@ -83,6 +83,7 @@ nav ul {
     font-size: 8rem;
     margin-top: 0;
     margin-bottom: 0;
+    color: var(--color-blue);
 }
 
 .banner-heading {
@@ -182,12 +183,12 @@ button:hover {
     padding-bottom: 2em;
 }
 
-#spotlight-boxes {
+#spotlight-boxes, #current-event-boxes {
     display: flex;
     justify-content: space-between;
 }
 
-.spotlight-business {
+.spotlight-business, .spotlight-event {
     background: var(--color-white);
     display: flex;
     flex-direction: column;
@@ -195,7 +196,11 @@ button:hover {
     border-radius: 5px;
 }
 
-.spotlight-business:hover {
+.spotlight-event {
+    background: var(--color-offw);
+}
+
+.spotlight-business:hover, .spotlight-event:hover {
     filter: drop-shadow(0px 5px 10px rgba(0, 0, 0, .3));
     transition: all 200ms;
 }
@@ -205,19 +210,21 @@ button:hover {
     border-top-right-radius: 5px;
 }
 
-.business-heading, .business-desc, .business-web {
+.business-heading, .business-desc, .business-web,
+.event-heading, .event-desc, .event-web {
     margin: 1.5rem;
 }
 
-.business-desc, .business-web {
+.business-desc, .business-web,
+.event-desc, .event-web {
     margin-top: 0;
 }
 
-.spotlight-business a {
+.spotlight-business a, .spotlight-event a {
     color: var(--color-green);
 }
 
-.spotlight-business a:visited {
+.spotlight-business a:visited, .spotlight-event a:visited {
     color: var(--color-green);
 }
 
@@ -303,7 +310,7 @@ button:hover {
 /***************************************************
 *                   BAKERSFIELD
 ***************************************************/
-#bakersfield-header {
+.subpage-header {
     position: relative;
     left: 0;
     top: 15%;
@@ -311,14 +318,23 @@ button:hover {
     justify-content: center;
 }
 
-#bakersfield-header-background {
-    background-image:
-        linear-gradient(to left, var(--color-offw), rgba(255, 255, 255, 0)),
-        url('images/bakersfield-banner.jpg');
+.subpage-header-bg {
     background-size: 1000px;
     background-repeat: no-repeat;
     max-width: 100%;
     height: 250px;
+}
+
+.bakersfield-header-bg {
+    background-image:
+        linear-gradient(to left, var(--color-offw), rgba(255, 255, 255, 0)),
+        url('images/bakersfield-banner.jpg');
+}
+
+.join-header-bg {
+    background-image:
+        linear-gradient(to left, var(--color-offw), rgba(255, 255, 255, 0)),
+        url('images/join-banner.jpg');
 }
 
 .history-flexbox {
@@ -334,6 +350,7 @@ button:hover {
 .demo-boxes {
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 .demo-box {
@@ -342,11 +359,58 @@ button:hover {
     border-radius: 10px;
     padding: 0em 5em 0em 5em;
     text-align: center;
+    margin-bottom: 1em;
 }
 
 .demo-box:nth-child(even) {
     background: var(--color-blue);
     color: var(--color-white);
+}
+
+#fun-facts-list {
+    line-height: 2em;
+}
+
+/****************************
+*     APPLCIATION FORM
+****************************/
+#application-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 40%;
+}
+
+.form-box {
+    /* width: 300px; */
+    height: 2em;
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--color-white);
+    background: var(--color-blue);
+    border: 0px solid;
+    border-bottom: 3px solid var(--color-mint);
+    margin-bottom: 2em;
+    outline: none;
+}
+
+.form-box:focus {
+    border-bottom: 3px solid var(--color-green);
+}
+
+.form-box:hover {
+    border-bottom: 3px solid var(--color-green);
+    transition: all 300ms;
+}
+
+.app-name label {
+    margin-top: .8em;
+}
+
+#membership-level {
+    display: flex;
+    flex-direction: column;
 }
 
 /****************************
