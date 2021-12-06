@@ -489,7 +489,11 @@ footer {
 }
 
 #footer-button {
-    margin-top: 4em;
+    margin-top: 2em;
+}
+
+#last-updated {
+    padding-top: .5em;
 }
 
 /**************************************************************************
