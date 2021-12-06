@@ -370,6 +370,52 @@ button:hover, #submit:hover {
     line-height: 2em;
 }
 
+/***************************************************
+*                      JOIN
+***************************************************/
+.membership-box {
+    padding: 0em .5em 0em .5em;
+    width: 25%;
+    height: 100%;
+}
+
+.perks-list {
+    padding: 1em;
+    padding-left: 2em;
+    border-radius: 5px;
+    text-align: left;
+    line-height: 1.5em;
+    background: rgba(255, 255, 255, .75);
+    box-shadow: inset 0 0 10px #cfcfcf;
+}
+
+#gold {
+    background: rgb(181,152,0);
+    background: linear-gradient(0deg, rgba(181,152,0,1) 0%, rgba(238,216,58,1) 43%, rgba(254,255,91,1) 66%, rgba(212,200,17,1) 100%);
+    color: black;
+}
+
+#silver {
+    background: rgb(176,176,176);
+    background: linear-gradient(0deg, rgba(176,176,176,1) 0%, rgba(232,232,232,1) 43%, rgba(255,255,255,1) 66%, rgba(207,207,207,1) 100%);
+    color: black;
+}
+
+#bronze {
+    background: rgb(200,131,0);
+    background: linear-gradient(0deg, rgba(200,131,0,1) 0%, rgba(219,150,0,1) 43%, rgba(231,209,116,1) 66%, rgba(198,169,0,1) 100%);
+    color: black;
+}
+
+#non-profit {
+    background: var(--color-blue);
+    color: var(--color-text);
+}
+
+#non-profit h3 {
+    color: white;
+}
+
 /****************************
 *     APPLCIATION FORM
 ****************************/
