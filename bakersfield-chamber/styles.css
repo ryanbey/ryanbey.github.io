@@ -104,7 +104,7 @@ nav ul {
     margin-bottom: 1rem;
 }
 
-button {
+button, #submit {
     background-color: var(--color-green);
     border: none;
     border-radius: 5px;
@@ -115,7 +115,7 @@ button {
     display: inline-block;
 }
 
-button:hover {
+button:hover, #submit:hover {
     background: var(--color-mint);
     color: var(--color-blue);
     transition: all 300ms;
@@ -171,7 +171,6 @@ button:hover {
     line-height: 1.2em;
 }
 
-
 /****************************
 *        SPOTLIGHT
 ****************************/
@@ -185,7 +184,7 @@ button:hover {
 
 #spotlight-boxes, #current-event-boxes {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .spotlight-business, .spotlight-event {
@@ -376,17 +375,20 @@ button:hover {
 ****************************/
 #application-form {
     display: flex;
+    justify-content: space-evenly;
+}
+
+.app-left, .app-right {
+    display: flex;
     flex-direction: column;
-    justify-content: center;
-    max-width: 40%;
+    width: 35%;
 }
 
 .form-box {
     /* width: 300px; */
     height: 2em;
     font-size: 1em;
-    font-weight: 400;
-    line-height: 1.5;
+    font-weight: 300;
     color: var(--color-white);
     background: var(--color-blue);
     border: 0px solid;
@@ -411,6 +413,15 @@ button:hover {
 #membership-level {
     display: flex;
     flex-direction: column;
+}
+
+#membership-level input {
+    margin-bottom: 1em;
+}
+
+#submit {
+    margin-top: 1em;
+    width: 200px;
 }
 
 /****************************

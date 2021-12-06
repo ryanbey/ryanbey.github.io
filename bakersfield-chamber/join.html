@@ -6,14 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css"/>
     <link rel="stylesheet" href="normalize.css"/>
-    <title>Home | Bakersfield Chamber</title>
+    <title>Join | Bakersfield Chamber</title>
 </head>
 
 <body>
     <nav>
         <img class="nav-logo" src="images/nav-logo.png" alt="navigation bar logo">
         <ul class="navigation">
-            <li><a class="menu" href="#"><img id="hamburger-icon" src="images/icons/hamburger-icon.png" alt="hamburger menu icon"></a></li>
+            <li><a class="menu" href="#"><img id="hamburger-icon" src="images/hamburger-icon.png" alt="hamburger menu icon"></a></li>
             <li><a class="nav-link" href="index.html">Home</a></li>
             <li><a class="nav-link" href="bakersfield.html">Bakersfield</a></li>
             <li><a class="nav-link active-page" href="join.html">Join</a></li>
@@ -44,44 +44,47 @@
                 <h2 class="section-heading">Application</h2>
                 <div class="divider"></div>
                 <form id="application-form" method="get" action="thanks.html">
+                    <div class="app-left">
                         <label for="fname">First Name</label>
-                        <input type="text" name="fname" id="fname" pattern="[A-Za-z-\.\s]{2,}"  class="form-box"required>
+                        <input type="text" name="fname" id="fname" pattern="[A-Za-z-\.\s]{2,}"  class="form-box" required>
                         <label for="lname">Last Name</label>
-                        <input type="text" name="lname" id="lname" pattern="[A-Za-z-\.\s]{2,}"  class="form-box"required>
+                        <input type="text" name="lname" id="lname" pattern="[A-Za-z-\.\s]{2,}"  class="form-box" required>
                         <label for="title">Title</label>
                         <input type="text" name="title" id="title" pattern="[A-Za-z-\.\s]{1,}" class="form-box">
-                    <label for="email">Email</label>
-                    <input type="email" name="email" id="email" class="form-box" required>
-                    <label for="phone">Phone Number</label>
-                    <input type="tel" name="phone" id="phone" class="form-box" required>
-                    <label for="bname">Business Name</label>
-                    <input type="text" name="bname" id="bname" pattern="[A-Za-z-\.\s]{2,}"  class="form-box"required>
-                    <label for="bname">Business Address</label>
-                    <input type="text" name="baddress" id="baddress" class="form-box">
-                    <label for="bdesc">Business Description</label>
-                    <textarea name="bdesc" id="baddress" class="form-box" rows="5" maxlength="3000"></textarea>
-                    <div id="membership-level">
-                        <p>Membership Level</p>
-                        <div class="level">
-                            <input type="radio" id="answer1" name="membership">
-                            <label for="answer1">Non-Profit ($100)</label>
-                        </div>
-                        <div class="level">
-                            <input type="radio" id="answer2" name="membership">
-                            <label for="answer2">Bronze ($200)</label>
-                        </div>
-                        <div class="level">
-                            <input type="radio" id="answer3" name="membership">
-                            <label for="answer3"> Silver ($400)</label>
-                        </div>
-                        <div class="level">
-                            <input type="radio" id="answer3" name="membership">
-                            <label for="answer3"> Gold ($1,000)</label>
-                        </div>
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" class="form-box" required>
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" name="phone" id="phone" class="form-box" required>
                     </div>
-                    <input type="submit" value="Submit" id="submit">
+                    <div class="app-right">
+                        <label for="bname">Business Name</label>
+                        <input type="text" name="bname" id="bname" pattern="[A-Za-z-\.\s]{2,}"  class="form-box" required>
+                        <label for="bname">Business Address</label>
+                        <input type="text" name="baddress" id="baddress" class="form-box">
+                        <label for="bdesc">Business Description</label>
+                        <textarea name="bdesc" id="bdesc" class="form-box" rows="5" maxlength="3000"></textarea>
+                        <div id="membership-level">
+                            <p>Membership Level</p>
+                            <div class="level">
+                                <input type="radio" id="answer1" name="membership">
+                                <label for="answer1">Non-Profit ($100)</label>
+                            </div>
+                            <div class="level">
+                                <input type="radio" id="answer2" name="membership">
+                                <label for="answer2">Bronze ($200)</label>
+                            </div>
+                            <div class="level">
+                                <input type="radio" id="answer3" name="membership">
+                                <label for="answer3">Silver ($400)</label>
+                            </div>
+                            <div class="level">
+                                <input type="radio" id="answer4" name="membership">
+                                <label for="answer3">Gold ($1,000)</label>
+                            </div>
+                        </div>
+                        <input type="submit" value="SUBMIT" id="submit">
+                    </div>
                 </form>
-                </div>
             </div>
         </section>
     </main>
@@ -106,5 +109,7 @@
             <button id="footer-button" class="join-button" onclick="location.href='join.html'">JOIN TODAY</button>
         </div>
     </footer>
+
+    <script src="hamburger.js"></script>
 </body>
 </html>
