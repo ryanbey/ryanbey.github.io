@@ -1,52 +1,52 @@
 {
-    "directory": [
+  "directory": [
+      {
+        "name": "Bakersfield Museum of Art",
+        "logo": "images/bmoa-dir.png",
+        "phone": "(661) 323-7219",
+        "link": "https://www.bmoa.org/"
+      },
+
+      {
+        "name": "Dewar's Candy Shop",
+        "logo": "images/dewars-dir.png",
+        "phone": "(661) 587-2056",
+        "link": "https://www.dewarscandy.com/"
+      },
+
+      {
+        "name": "In-Shape Health Clubs",
+        "logo": "images/inshape-dir.png",
+        "phone": "(661) 387-3608",
+        "link": "https://www.inshape.com/"
+      },
+
+      {
+        "name": "In-N-Out Burgers",
+        "logo": "images/innout-dir.png",
+        "phone": "(800) 786-1000",
+        "link": "https://www.in-n-out.com/"
+      },
+
       {
         "name": "Kern County Raceway Park",
-        "logo": "images/",
-        "phone": "(661) 123-4567",
-        "link": "https://"
+        "logo": "images/kcrp-dir.png",
+        "phone": "(661) 835-1264",
+        "link": "https://www.kernraceway.com/"
       },
 
       {
-        "name": "",
-        "logo": "images/",
-        "phone": "(661) 123-4567",
-        "link": "https://"
+        "name": "Studio Movie Grill",
+        "logo": "images/smg-dir.png",
+        "phone": "(661) 535-2292",
+        "link": "https://www.studiomoviegrill.com/locations/california/bakersfield/2021/12/6"
       },
 
       {
-        "name": "",
-        "logo": "images/",
-        "phone": "(661) 123-4567",
-        "link": "https://"
-      },
-
-      {
-        "name": "",
-        "logo": "images/",
-        "phone": "(661) 123-4567",
-        "link": "https://"
-      },
-
-      {
-        "name": "",
-        "logo": "images/",
-        "phone": "(661) 123-4567",
-        "link": "https://"
-      },
-
-      {
-        "name": "",
-        "logo": "images/",
-        "phone": "(661) 123-4567",
-        "link": "https://"
-      },
-
-      {
-        "name": "",
-        "logo": "images/",
-        "phone": "(661) 123-4567",
-        "link": "https://"
+        "name": "Target",
+        "logo": "images/target-dir.png",
+        "phone": "(661) 589-0554",
+        "link": "https://www.target.com/"
       }
     ]
   }

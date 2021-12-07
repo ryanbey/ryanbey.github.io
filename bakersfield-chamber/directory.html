@@ -6,14 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css"/>
     <link rel="stylesheet" href="normalize.css"/>
-    <title>Home | Bakersfield Chamber</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <title>Directory | Bakersfield Chamber</title>
 </head>
 
 <body>
     <nav>
         <img class="nav-logo" src="images/nav-logo.png" alt="navigation bar logo">
         <ul class="navigation">
-            <li><a class="menu" href="#"><img id="hamburger-icon" src="images/icons/hamburger-icon.png" alt="hamburger menu icon"></a></li>
+            <li><a class="menu" href="#"><img id="hamburger-icon" src="images/hamburger-icon.png" alt="hamburger menu icon"></a></li>
             <li><a class="nav-link" href="index.html">Home</a></li>
             <li><a class="nav-link" href="bakersfield.html">Bakersfield</a></li>
             <li><a class="nav-link" href="join.html">Join</a></li>
@@ -23,11 +27,29 @@
     </nav>
 
     <header>
-        
+        <div class="directory-header-bg subpage-header-bg">
+            <div class="subpage-header">
+                <h1 class="banner-cursive">Directory</h1>
+            </div>
+        </div>
     </header>
 
     <main>
-
+        <section class="business-directory white-bg">
+            <div class="section-content">
+                <h2 class="section-heading">Business Directory</h2>
+                <div class="divider"></div>
+                <div class="directory-button-box">
+                    <div id="left-button" class="directory-button">
+                        <img src="images/list-icon.png" alt="list icon" draggable="false">
+                    </div>
+                    <div id="right-button" class="directory-button">
+                        <img src="images/grid-icon.png" alt="grid icon" draggable="false">
+                    </div>
+                </div>
+                <div class="business-directory-container"></div>
+            </div>
+        </section>
     </main>
 
     <footer class="section-content">
@@ -52,6 +74,7 @@
         </div>
     </footer>
 
+    <script src="directory.js"></script>
     <script src="hamburger.js"></script>
     <script src="last-updated.js"></script>
 </body>

@@ -235,11 +235,11 @@ button:hover, #submit:hover {
     grid-template-columns: 50% 50%;
 }
 
-#events-content {
+#events-content, #contact-content {
     padding-left: 35%;
 }
 
-#weather-content {
+#weather-content, #map-content {
     margin-left: 4em;
 }
 
@@ -336,6 +336,18 @@ button:hover, #submit:hover {
         url('images/join-banner.jpg');
 }
 
+.contact-header-bg {
+    background-image:
+        linear-gradient(to left, var(--color-offw), rgba(255, 255, 255, 0)),
+        url('images/contact-banner.jpg');
+}
+
+.directory-header-bg {
+    background-image:
+        linear-gradient(to left, var(--color-offw), rgba(255, 255, 255, 0)),
+        url('images/directory-banner.jpg');
+}
+
 .history-flexbox {
     display: flex;
     align-items: center;
@@ -375,7 +387,7 @@ button:hover, #submit:hover {
 ***************************************************/
 .membership-box {
     padding: 0em .5em 0em .5em;
-    width: 25%;
+    width: 20%;
     height: 100%;
 }
 
@@ -386,7 +398,7 @@ button:hover, #submit:hover {
     text-align: left;
     line-height: 1.5em;
     background: rgba(255, 255, 255, .75);
-    box-shadow: inset 0 0 10px #cfcfcf;
+    box-shadow: inset 0 0 10px #bebebe;
 }
 
 #gold {
@@ -470,6 +482,84 @@ button:hover, #submit:hover {
     width: 200px;
 }
 
+.board-cards {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 2em; 
+    margin-bottom: 2em;
+}
+
+.board-card {
+    background: mint;
+    border: solid 2px var(--color-mint);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.board-name {
+    color: var(--color-green);
+    font-weight: 500;
+}
+
+/***************************************************
+*                    DIRECTORY
+***************************************************/
+.directory-button-box {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    top: -100px;
+}
+
+#left-button img, #right-button img {
+    width: 30px;
+    user-select: none;
+}
+
+#left-button {
+    border: solid 2px var(--color-offw);
+    border-right: solid 1px var(--color-offw);
+    border-radius: 10px 0px 0px 10px;
+    padding: .3em;
+}
+
+#right-button {
+    border: solid 2px var(--color-offw);
+    border-left: solid 1px var(--color-offw);
+    border-radius: 0px 10px 10px 0px;
+    padding: .3em;
+}
+
+/***************************************************
+*                     CONTACT
+***************************************************/
+#contact-form {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.contact-box {
+    /* width: 300px; */
+    height: 2em;
+    font-size: 1em;
+    font-weight: 300;
+    color: var(--color-text);
+    background: var(--color-offw);
+    border: 0px solid;
+    border-bottom: 3px solid var(--color-blue);
+    margin-bottom: 2em;
+    outline: none;
+}
+
+.contact-box:focus {
+    border-bottom: 3px solid var(--color-green);
+}
+
+.contact-box:hover {
+    border-bottom: 3px solid var(--color-green);
+    transition: all 300ms;
+}
+
 /****************************
 *          FOOTER
 ****************************/
@@ -493,6 +583,7 @@ footer {
 }
 
 #last-updated {
+    font-size: .9em;
     padding-top: .5em;
 }
 
