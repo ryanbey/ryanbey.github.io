@@ -8,7 +8,36 @@ fetch(src)
     .then((jsObject) => {
         console.log(jsObject);
 
-        let container = document.querySelector('.business-directory-container');
+        const directory = jsObject['directory'];  
+
+        for (let i = 0; i < directory.length; i++ ) {
+            let card = document.createElement('article');
+            let logo = document.createElement('img');
+            let name = document.createElement('h3');
+            let phone = document.createElement('p');
+            let link = document.createElement('a');
+  
+            // Business Logo
+            logo.setAttribute('src', directory[i].logo);
+            logo.setAttribute('alt', directory[i].name + ' logo');
+            card.appendChild(logo);
+
+            // Business Name
+            name.textContent = directory[i].name;
+            card.appendChild(name);
+
+            // Business Phone #
+            phone.textContent = directory[i].phone;
+            card.appendChild(phone);
+
+            // Business Link
+            link.setAttribute('href', directory[i].link);
+            link.textContent = directory[i].link
+            card.appendChild(link);
+
+            card.classList.add('business-directory-box');
+            document.querySelector('.grid-view').appendChild(card);
+        }
     });
 
 /**************************************************
@@ -18,9 +47,7 @@ let listBtn = document.querySelector('#left-button');
 let gridBtn = document.querySelector('#right-button');
 let offw = '#e8e8e8';
 let white = '#ffffff';
-
-// Load list view by default
-
+let container = document.querySelector('div.grid-view');
 
 // List button listeners
 listBtn.addEventListener('mouseenter', function(btnEnter) {
@@ -32,8 +59,8 @@ listBtn.addEventListener('mouseleave', function(btnLeave) {
 })
 
 listBtn.onclick = function() {
-    // Change to grid styling
-    console.log('list click');
+    container.classList.remove('grid-view');
+    container.classList.add('list-view');
 }
 
 // Grid button listeners
@@ -46,6 +73,6 @@ gridBtn.addEventListener('mouseleave', function(btnLeave) {
 })
 
 gridBtn.onclick = function() {
-    // Change to grid styling
-    console.log('grid click');
+    container.classList.remove('list-view');
+    container.classList.add('grid-view');
 }

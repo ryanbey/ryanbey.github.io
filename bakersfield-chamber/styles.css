@@ -452,7 +452,6 @@ button:hover, #submit:hover {
 }
 
 .form-box {
-    /* width: 300px; */
     height: 2em;
     font-size: 1em;
     font-weight: 300;
@@ -539,6 +538,47 @@ button:hover, #submit:hover {
     padding: .3em;
 }
 
+.grid-view {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.list-view {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.business-directory-box {
+    background: var(--color-offw);
+    color: var(--color-blue);
+    border-radius: 10px;
+    margin-bottom: 2em;
+    padding-bottom: 1em;
+    max-width: 350px;
+}
+
+.business-directory-box h3,
+.business-directory-box p,
+.business-directory-box a {
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.business-directory-box a {
+    /* TO DO */
+}
+
+.business-directory-box p {
+    color: var(--color-text);
+}
+
+.business-directory-box img {
+    border: solid 2px var(--color-offw);
+    border-radius: 10px 10px 0 0;
+    width: 346px;
+}
+
 /***************************************************
 *                     CONTACT
 ***************************************************/
@@ -548,7 +588,6 @@ button:hover, #submit:hover {
 }
 
 .contact-box {
-    /* width: 300px; */
     height: 2em;
     font-size: 1em;
     font-weight: 300;

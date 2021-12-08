@@ -3,9 +3,6 @@ const weatherURL = "https://api.openweathermap.org/data/2.5/onecall?lat=35.3733&
 fetch(weatherURL)
     .then((response) => response.json())
     .then((jsObject) => {
-        // console.log('API loaded successfully');
-        // console.log(jsObject);
-
         // Currently
         let currentTemp = jsObject.current.temp.toFixed(0);
         let condition = jsObject.current.weather[0].main;
