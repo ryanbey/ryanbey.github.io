@@ -6,7 +6,7 @@ const src = 'directory.json';
 fetch(src)
     .then((response) => response.json())
     .then((jsObject) => {
-        console.log(jsObject);
+        // console.log(jsObject);
 
         const directory = jsObject['directory'];  
 

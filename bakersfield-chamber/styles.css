@@ -498,7 +498,6 @@ button:hover, #submit:hover {
 }
 
 .board-card {
-    background: mint;
     border: solid 2px var(--color-mint);
     border-radius: 10px;
     text-align: center;
@@ -539,8 +538,12 @@ button:hover, #submit:hover {
 }
 
 .grid-view {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    /* display: grid;
+    grid-template-columns: repeat(3, 1fr); */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 .list-view {
@@ -566,7 +569,7 @@ button:hover, #submit:hover {
 }
 
 .business-directory-box a {
-    /* TO DO */
+    color: var(--color-green);
 }
 
 .business-directory-box p {
@@ -707,6 +710,102 @@ footer {
         grid-row: 2;
         margin-left: 11rem;
     }
+
+    .bakersfield-header-bg {
+        background-image:
+            linear-gradient(to top, var(--color-white), rgba(255, 255, 255, 0)),
+            url('images/bakersfield-banner.jpg');
+        background-size: 1000px;
+        background-repeat: no-repeat;
+        max-width: 100%;
+        height: 252px;
+    }
+
+    .join-header-bg {
+        background-image:
+            linear-gradient(to top, var(--color-white), rgba(255, 255, 255, 0)),
+            url('images/join-banner.jpg');
+        background-size: 1000px;
+        background-repeat: no-repeat;
+        max-width: 100%;
+        height: 252px;
+    }
+
+    .directory-header-bg {
+        background-image:
+            linear-gradient(to top, var(--color-white), rgba(255, 255, 255, 0)),
+            url('images/directory-banner.jpg');
+        background-size: 1000px;
+        background-repeat: no-repeat;
+        max-width: 100%;
+        height: 252px;
+    }
+    
+    .contact-header-bg {
+        background-image:
+            linear-gradient(to top, var(--color-white), rgba(255, 255, 255, 0)),
+            url('images/contact-banner.jpg');
+        background-size: 1000px;
+        background-repeat: no-repeat;
+        max-width: 100%;
+        height: 252px;
+    }
+
+    .banner-cursive {
+        filter: drop-shadow(0px 10px 10px rgba(255, 255, 255, 1));
+        font-size: 80pt;
+    }
+
+    .history-flexbox {
+        flex-direction: column;
+    }
+
+    .demo-boxes {
+        flex-direction: column;
+    }
+
+    .membership-boxes {
+        justify-content: center;
+        align-items: flex-start;
+        position: relative;
+        top: 50px;
+    }
+
+    .membership-box {
+        padding: 0em .5em 0em .5em;
+        width: 75%;
+        height: 100%;
+        margin-bottom: 1em;
+    }
+
+    #application-form {
+        justify-content: space-between;
+    }
+
+    .app-left, .app-right {
+        width: 45%;
+    }
+
+    #current-event-boxes {
+        flex-wrap: wrap;
+    }
+
+    .spotlight-event {
+        margin-bottom: 1em;
+    }
+
+    #contact-content {
+        padding: 1em;
+    }
+
+    #map-content {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .directory-button-box {
+        display: none;
+    }
 }
 
 @media (max-width: 950px) {
@@ -754,7 +853,7 @@ footer {
         left: 15%;
         top: 25%;
         filter: drop-shadow(0px 5px 10px rgba(255, 255, 255, 1));
-        zoom: 50%;
+        zoom: 55%;
     }
 
     .section-content {
@@ -811,5 +910,26 @@ footer {
     .active-page {
         border-left: solid 6px var(--color-mint);
         border-bottom: 0;
+    }
+
+    .banner-cursive {
+        font-size: 48pt;
+    }
+
+    #application-form, #contact-form{
+        flex-direction: column;
+    }
+
+    .app-left, .app-right {
+        width: 90%;
+    }
+
+    iframe {
+        width: 100%;
+    }
+
+    .board-cards {
+        display: flex;
+        flex-direction: column;
     }
 }

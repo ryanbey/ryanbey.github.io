@@ -42,5 +42,20 @@ fetch(weatherURL)
         }
 
         // Weather Alerts
+        if (jsObject.alerts) {
+            let messageDiv = document.querySelector('.weather-alert');
+            let msg = document.createElement('p');
 
+            let sender = jsObject.alerts.sender_name;
+            let event = jsObject.alerts.event;
+            let description = jsObject.alerts.description;
+            let alert = sender + event + description;
+
+            msg.appendChild(alert);
+            messageDiv.appendChild(msg);
+        }
+
+        else {
+            return;
+        }
     });
