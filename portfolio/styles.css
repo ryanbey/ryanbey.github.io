@@ -263,6 +263,12 @@ main {
     color: var(--color-white);
 }
 
+.wip-tag {
+    font-style: italic;
+    font-size: 80%;
+    color: var(--color-mint);
+}
+
 .box-heading {
     grid-row: 1;
     margin-top: 1em;
