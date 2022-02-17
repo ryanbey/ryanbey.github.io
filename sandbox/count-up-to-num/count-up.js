@@ -10,7 +10,7 @@ btn.addEventListener('click', () => {
 
     for (i = 0; i < value; i++) {
         array[i] = i + 1;         // Fill array
-        result = array[i];        // Calculate result
+        result += array[i];        // Calculate result
     }
 
     document.getElementById('output').innerHTML = result;
