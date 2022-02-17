@@ -12,8 +12,8 @@ let myChart = new Chart(ctx, {
         datasets: [{
             label: '2022 Season 1 iRating',
             data: irating,
-            backgroundColor: "rgba(255, 0, 0, 0.2)",
-            borderColor: "rgba(255, 0, 0, 0.3)",
+            backgroundColor: "rgba(255, 0, 0, 0.3)",
+            borderColor: "rgba(255, 0, 0, 0.5)",
             borderWidth: 3,
             // lineTension: 0  // Removes line curvature
         }]
