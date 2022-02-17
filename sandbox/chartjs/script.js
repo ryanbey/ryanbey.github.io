@@ -12,8 +12,8 @@ let myChart = new Chart(ctx, {
         datasets: [{
             label: '2022 Season 1 iRating',
             data: irating,
-            backgroundColor: "rgba(255, 0, 0, 0.15)",
-            borderColor: "rgba(255, 0, 0, 0.25)",
+            backgroundColor: "rgba(255, 0, 0, 0.2)",
+            borderColor: "rgba(255, 0, 0, 0.3)",
             borderWidth: 3,
             // lineTension: 0  // Removes line curvature
         }]
@@ -26,17 +26,17 @@ let myChart = new Chart(ctx, {
         scales: {
             yAxes: [{
                 ticks: {
-                    fontColor: "white",
+                    fontColor: "black",
                     suggestedMin: 4600,
                     suggestedMax: 5000
                 },
                 gridLines: {
-                    color: "rgba(255, 255, 255, 0.125)"
+                    color: "#e8e8e8"
                 }
             }],
             xAxes: [{
                 ticks: {
-                    fontColor: "white"
+                    fontColor: "black"
                 },
                 gridLines: {
                     display: false
@@ -46,7 +46,7 @@ let myChart = new Chart(ctx, {
 
         legend: {
             labels: {
-                fontColor: 'white'
+                fontColor: 'black'
             }
         }
     }
