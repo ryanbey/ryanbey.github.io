@@ -186,6 +186,37 @@ main {
     font-size: 1.3em;
 }
 
+.skills-box {
+    border: solid 5px #013333;
+    width: 30%;
+}
+
+.skills-box:nth-child(2) {
+    border: solid 5px #2e2e2e;
+}
+
+.skills-box:nth-child(3) {
+    border: solid 5px #000;
+}
+
+.skills-box-heading {
+    background:#013333;
+    padding: 1em;
+    margin-top: 0;
+}
+
+#tools-heading {
+    background:#2e2e2e;
+}
+
+#soft-skills-heading {
+    background:#000;
+}
+
+.skills-box p:nth-child(2) {
+    margin-left: 1em;
+}
+
 /***********************
 *   Projects
 ***********************/
