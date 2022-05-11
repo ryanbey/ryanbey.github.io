@@ -26,7 +26,7 @@ nav {
   position: sticky;
   top: 0;
   z-index: 999;
-  background: rgba(0, 0, 0, 0.75);
+  background-color: rgba(0, 0, 0, 0.75);
 }
 nav ul {
   display: flex;
@@ -37,10 +37,12 @@ nav ul {
   margin: 1em;
 }
 
+.nav-link {
+  transition: background-color 300ms, border-bottom 125ms;
+}
 .nav-link:hover {
-  background: #1a1a1a;
-  border-bottom: solid 6px #00dcb4;
-  transition: background 300ms;
+  background-color: #1a1a1a;
+  border-bottom: solid 6px white;
 }
 
 .active-page {

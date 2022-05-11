@@ -35,7 +35,7 @@ nav {
    position: sticky;
    top: 0;
    z-index: 999;
-   background: rgba(0, 0, 0, 75%);
+   background-color: rgba(0, 0, 0, 75%);
    & ul {
       display: flex;
       justify-content: center;
@@ -46,10 +46,12 @@ nav {
    } 
 }
 
-.nav-link:hover {
-   background: $gray;
-   border-bottom: solid 6px $mint;
-   transition: background 300ms;
+.nav-link {
+   transition: background-color 300ms, border-bottom 125ms;
+   &:hover {
+      background-color: $gray;
+      border-bottom: solid 6px $white;
+   }
 }
 
 .active-page {
