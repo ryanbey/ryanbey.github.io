@@ -165,3 +165,45 @@ function moveToPrevSlide4() {
 
    updateSlidePosition4();
 }
+
+/*******************************
+ *        CAROUSEL 5
+ *******************************/
+ let slidePosition5 = 0;
+ const slides5 = document.getElementsByClassName('carousel-5-item');
+ const totalSlides5 = slides5.length;
+ 
+ document.getElementById('carousel-5-button-next').addEventListener('click', function () {
+    moveToNextSlide5();
+ });
+ 
+ document.getElementById('carousel-5-button-prev').addEventListener('click', function () {
+    moveToPrevSlide5();
+ });
+ 
+ function updateSlidePosition5() {
+    for (let slide5 of slides5) {
+       slide5.classList.remove('carousel-5-item-visible');
+       slide5.classList.add('carousel-5-item-hidden');
+    }
+    slides5[slidePosition5].classList.add('carousel-5-item-visible');
+ }
+ 
+ function moveToNextSlide5() {
+    if (slidePosition5 === totalSlides5 - 1) {
+       slidePosition5 = 0;
+    } else {
+       slidePosition5++;
+    }
+    updateSlidePosition5();
+ }
+ 
+ function moveToPrevSlide5() {
+    if (slidePosition5 === 0) {
+       slidePosition5 = totalSlides5 - 1;
+    } else {
+       slidePosition5--;
+    }
+ 
+    updateSlidePosition5();
+ }

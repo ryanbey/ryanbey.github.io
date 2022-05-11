@@ -108,6 +108,13 @@ main {
   font-size: 1.2em;
 }
 
+.alternating-color-section:nth-child(1) {
+  background-color: transparent;
+}
+.alternating-color-section:nth-child(2n) {
+  background-color: #1a1a1a;
+}
+
 .subpage-main {
   margin-top: -13rem;
   font-size: 1.1em;
@@ -474,6 +481,47 @@ main {
   color: #00dcb4;
 }
 
+.carousel-5 {
+  overflow: hidden;
+  max-width: 600px;
+  position: relative;
+}
+.carousel-5 .carousel-5-item, .carousel-5 .carousel-5-item-hidden {
+  display: none;
+}
+.carousel-5 .carousel-5-item img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+}
+.carousel-5 .carousel-5-item-visible {
+  display: block;
+  animation: fadeVisibility 0.5s;
+}
+.carousel-5 .carousel-5-actions {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.carousel-5 .carousel-5-actions button {
+  border: 0;
+  font-weight: bold;
+  cursor: pointer;
+  width: 30px;
+  height: 40px;
+}
+.carousel-5 .carousel-5-actions #carousel-5-button-prev, .carousel-5 .carousel-5-actions #carousel-5-button-next {
+  padding: 0;
+  background: rgba(0, 0, 0, 0.75);
+}
+.carousel-5 .carousel-5-actions #carousel-5-button-prev:hover, .carousel-5 .carousel-5-actions #carousel-5-button-next:hover {
+  background: black;
+  color: #00dcb4;
+}
+
 @keyframes fadeVisibility {
   0% {
     opacity: 0;
@@ -713,6 +761,10 @@ footer {
   gap: 2em;
   grid-template-columns: 40% 60%;
   max-width: 28rem;
+}
+
+.contact-form-alt-color {
+  background: #1a1a1a;
 }
 
 #text {

@@ -119,6 +119,15 @@ main {
    font-size: 1.2em;
 }
 
+.alternating-color-section {
+   &:nth-child(1) {
+      background-color: transparent;
+   }
+   &:nth-child(2n) {
+      background-color: $gray;
+   }
+}
+
 .subpage-main {
    margin-top: -13rem;
    font-size: 1.1em;
@@ -332,7 +341,7 @@ main {
 /***********************
 *   Carousels (Beware: Pro gamer moves)
 ***********************/
-@for $i from 1 through 4 {
+@for $i from 1 through 5 {
    .carousel-#{$i} {
       overflow: hidden;
       max-width: 600px;
@@ -616,6 +625,10 @@ footer {
    gap: 2em;
    grid-template-columns: 40% 60%;
    max-width: 28rem;
+}
+
+.contact-form-alt-color {
+   background: $gray;
 }
 
 #text {
