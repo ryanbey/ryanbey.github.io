@@ -9,6 +9,10 @@ $mint: #00dcb4;
 $offw: #edeff5;
 $white: white;
 
+html {
+   scroll-behavior: smooth;
+}
+
 body {
    font-family: 'Roboto', sans-serif;
    background: $black;
@@ -19,7 +23,8 @@ body {
 /***********************
 *   Navigation
 ***********************/
-.nav-link, .nav-link:visited {
+.nav-link,
+.nav-link:visited {
    color: $white;
    text-decoration: none;
    padding: 1em;
@@ -36,6 +41,7 @@ nav {
    top: 0;
    z-index: 999;
    background-color: rgba(0, 0, 0, 75%);
+
    & ul {
       display: flex;
       justify-content: center;
@@ -43,11 +49,12 @@ nav {
       list-style: none;
       padding: 0;
       margin: 1em;
-   } 
+   }
 }
 
 .nav-link {
    transition: background-color 300ms, border-bottom 125ms;
+
    &:hover {
       background-color: $gray;
       border-bottom: solid 6px $white;
@@ -96,16 +103,19 @@ header {
       margin: 0;
       font-size: 3em;
    }
+
    &-banner {
       height: 300px;
    }
+
    &-sub {
       font-size: 1.6em;
-   font-weight: 300;
+      font-weight: 300;
    }
+
    &-img {
       border-radius: 50%;
-   border: solid 7px $black;
+      border: solid 7px $black;
    }
 }
 
@@ -123,6 +133,7 @@ main {
    &:nth-child(1) {
       background-color: transparent;
    }
+
    &:nth-child(2n) {
       background-color: $gray;
    }
@@ -151,6 +162,7 @@ main {
       margin-bottom: 0.3em;
       margin-top: 0;
    }
+
    &-content {
       max-width: 60%;
       margin-left: auto;
@@ -193,24 +205,29 @@ main {
 }
 
 .skills-box {
-   border: solid 5px #013333;    // Turq border on first box
+   border: solid 5px #013333; // Turq border on first box
    min-width: 30%;
+
    &-heading {
       background: #013333;
       padding: 1em;
       margin-top: 0;
    }
+
    &:nth-child(2) {
       border: solid 5px #2e2e2e; // Gray border on second box
    }
+
    &:nth-child(3) {
-      border: solid 5px #000;    // Black border on third box
+      border: solid 5px #000; // Black border on third box
    }
+
    & p:nth-child(n + 2) {
-      margin: 0.3em 1em;           // Margins for skills items
+      margin: 0.3em 1em; // Margins for skills items
    }
+
    & p:nth-last-child(1) {
-      margin-bottom: 0.7em;        // Bottom margin for last skill item
+      margin-bottom: 0.7em; // Bottom margin for last skill item
    }
 }
 
@@ -237,14 +254,16 @@ main {
 .projects-grid {
    display: grid;
    grid-template-columns: 60% 40%;
+
    &-left {
       grid-column: 1;
    }
+
    &-right {
       grid-column: 2;
-   display: flex;
-   align-items: center;
-   justify-content: right;
+      display: flex;
+      align-items: center;
+      justify-content: right;
    }
 }
 
@@ -252,6 +271,69 @@ main {
    display: grid;
    margin-bottom: 2em;
    background: rgba(0, 0, 0, 60%);
+   transition: transform 300ms;
+
+   &:hover {
+      transform: scale(102%);
+   }
+}
+
+.project-img-darken {
+   transition: all 300ms;
+   opacity: 50%;
+   filter: blur(2px);
+}
+
+.project-img-lighten {
+   transition: all 300ms;
+   opacity: 100%;
+   filter: blur(0px);
+}
+
+.project-img-btn-show {
+   position: absolute;
+   bottom: 100px;
+   left: 85px;
+   animation: fadein ease 300ms;
+
+   &>button {
+      background-color: rgba($color: black, $alpha: .5);
+   }
+}
+
+.project-img-btn-hide {
+   position: absolute;
+   bottom: 0px;
+   left: 85px;
+   animation: fadeout ease 300ms;
+
+   &>button {
+      background-color: rgba($color: black, $alpha: .5);
+   }
+}
+
+@keyframes fadein {
+   from {
+      opacity: 0%;
+      bottom: 0px
+   }
+
+   to {
+      opacity: 100%;
+      bottom: 100px;
+   }
+}
+
+@keyframes fadeout {
+   from {
+      opacity: 100%;
+      bottom: 100px
+   }
+
+   to {
+      opacity: 0%;
+      bottom: 0px;
+   }
 }
 
 .box-img {
@@ -314,10 +396,13 @@ main {
       grid-row: 1;
       margin-top: 1em;
    }
+
    &-p {
       grid-row: 3;
    }
-   &-p, &-heading {
+
+   &-p,
+   &-heading {
       padding-left: 2rem;
       padding-right: 2rem;
    }
@@ -346,18 +431,23 @@ main {
       overflow: hidden;
       max-width: 600px;
       position: relative;
-      & .carousel-#{$i}-item, & .carousel-#{$i}-item-hidden {
+
+      & .carousel-#{$i}-item,
+      & .carousel-#{$i}-item-hidden {
          display: none;
       }
+
       & .carousel-#{$i}-item img {
          width: 100%;
          max-width: 600px;
          height: auto;
       }
+
       & .carousel-#{$i}-item-visible {
          display: block;
          animation: fadeVisibility 0.5s;
       }
+
       & .carousel-#{$i}-actions {
          display: flex;
          width: 100%;
@@ -365,6 +455,7 @@ main {
          position: absolute;
          top: 50%;
          transform: translateY(-50%);
+
          & button {
             border: 0;
             font-weight: bold;
@@ -372,9 +463,12 @@ main {
             width: 30px;
             height: 40px;
          }
-         & #carousel-#{$i}-button-prev, & #carousel-#{$i}-button-next {
+
+         & #carousel-#{$i}-button-prev,
+         & #carousel-#{$i}-button-next {
             padding: 0;
             background: rgba(0, 0, 0, 75%);
+
             &:hover {
                background: $black;
                color: $mint;
@@ -385,7 +479,10 @@ main {
 }
 
 @keyframes fadeVisibility {
-   0% { opacity: 0; }
+   0% {
+      opacity: 0;
+   }
+
    100% {
       opacity: 1;
       transform: opacity ease;
@@ -402,6 +499,7 @@ main {
 .banners-container {
    display: flex;
    flex-direction: column;
+
    & img {
       margin-bottom: 1em;
    }
@@ -473,13 +571,16 @@ main {
    zoom: 93%;
    z-index: 100;
    transition: background-color 300ms;
+
    & img {
       max-width: 40px;
    }
+
    & p {
       margin: 0;
       margin-left: 1em;
    }
+
    &:hover {
       background-color: #333333;
    }
@@ -514,10 +615,12 @@ main {
       flex-wrap: wrap;
       justify-content: space-between;
    }
+
    &-box {
       background: $black;
       text-align: center;
       margin-bottom: 1em;
+
       &-heading {
          font-weight: 400;
          margin: 0.5em;
@@ -559,17 +662,21 @@ footer {
    display: flex;
    align-items: center;
    margin-bottom: 0.5em;
+
    & a {
       transition: all 300ms;
+
       &:link {
          margin: 0;
          margin-left: 0.5em;
          color: $white;
          text-decoration: none;
       }
+
       &:visited {
          color: $white;
       }
+
       &:hover {
          color: $mint;
          text-decoration: underline;
@@ -590,6 +697,7 @@ footer {
    margin-bottom: 0;
    text-decoration: none;
    transition: color 300ms;
+
    &:hover {
       color: $mint;
    }
@@ -612,9 +720,11 @@ footer {
    margin-bottom: 1em;
    outline: none;
    transition: all 300ms;
+
    &:focus {
       border-bottom: 3px solid $mint;
    }
+
    &:hover {
       border-bottom: 3px solid $mint;
    }
@@ -660,6 +770,7 @@ button {
    padding: 10px 25px;
    text-align: center;
    transition: background-color 300ms, color 300ms;
+
    &:hover {
       background-color: $mint;
       color: $black;
@@ -680,9 +791,11 @@ button {
 // Scrollbar
 ::-webkit-scrollbar {
    width: 8px;
+
    &-track {
       background: $black;
    }
+
    &-thumb {
       background: $gray;
       border-radius: 4px;
@@ -703,15 +816,19 @@ button {
          grid-row: 2;
          margin-top: 1em;
       }
+
       &-img {
          grid-column: 1;
          grid-row: 1;
          margin: 0 auto;
       }
+
       &-p {
          grid-row: 4;
       }
-      &-p, &-heading {
+
+      &-p,
+      &-heading {
          padding-left: 2rem;
          padding-right: 2rem;
       }
@@ -737,6 +854,7 @@ button {
 *   Small Screens
 ***********************/
 @media (max-width: 800px) {
+
    // Header
    #header-name {
       font-size: 2em;
@@ -826,6 +944,7 @@ button {
 }
 
 @media (max-width: 1200px) {
+
    // Projects Page
    .projects-grid {
       display: flex;

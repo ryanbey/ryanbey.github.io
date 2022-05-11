@@ -1,5 +1,9 @@
 /* Font: Roboto */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   background: black;
@@ -10,7 +14,8 @@ body {
 /***********************
 *   Navigation
 ***********************/
-.nav-link, .nav-link:visited {
+.nav-link,
+.nav-link:visited {
   color: white;
   text-decoration: none;
   padding: 1em;
@@ -235,8 +240,64 @@ main {
   display: grid;
   margin-bottom: 2em;
   background: rgba(0, 0, 0, 0.6);
+  transition: transform 300ms;
+}
+.projects-box:hover {
+  transform: scale(102%);
 }
 
+.project-img-darken {
+  transition: all 300ms;
+  opacity: 50%;
+  filter: blur(2px);
+}
+
+.project-img-lighten {
+  transition: all 300ms;
+  opacity: 100%;
+  filter: blur(0px);
+}
+
+.project-img-btn-show {
+  position: absolute;
+  bottom: 100px;
+  left: 85px;
+  animation: fadein ease 300ms;
+}
+.project-img-btn-show > button {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.project-img-btn-hide {
+  position: absolute;
+  bottom: 0px;
+  left: 85px;
+  animation: fadeout ease 300ms;
+}
+.project-img-btn-hide > button {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0%;
+    bottom: 0px;
+  }
+  to {
+    opacity: 100%;
+    bottom: 100px;
+  }
+}
+@keyframes fadeout {
+  from {
+    opacity: 100%;
+    bottom: 100px;
+  }
+  to {
+    opacity: 0%;
+    bottom: 0px;
+  }
+}
 .box-img {
   grid-column: 1;
   grid-row: 1/4;
