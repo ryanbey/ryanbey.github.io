@@ -262,7 +262,7 @@ main {
   position: absolute;
   bottom: 100px;
   left: 85px;
-  animation: fadein ease 300ms;
+  animation: fadein ease 200ms;
 }
 .project-img-btn-show > button {
   background-color: rgba(0, 0, 0, 0.5);
@@ -272,7 +272,7 @@ main {
   position: absolute;
   bottom: 0px;
   left: 85px;
-  animation: fadeout ease 300ms;
+  animation: fadeout ease 200ms;
 }
 .project-img-btn-hide > button {
   background-color: rgba(0, 0, 0, 0.5);

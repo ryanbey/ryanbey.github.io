@@ -294,7 +294,7 @@ main {
    position: absolute;
    bottom: 100px;
    left: 85px;
-   animation: fadein ease 300ms;
+   animation: fadein ease 200ms;
 
    &>button {
       background-color: rgba($color: black, $alpha: .5);
@@ -305,7 +305,7 @@ main {
    position: absolute;
    bottom: 0px;
    left: 85px;
-   animation: fadeout ease 300ms;
+   animation: fadeout ease 200ms;
 
    &>button {
       background-color: rgba($color: black, $alpha: .5);
