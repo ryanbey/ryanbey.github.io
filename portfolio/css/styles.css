@@ -43,10 +43,10 @@ nav ul {
 }
 
 .nav-link {
-  transition: background-color 300ms, border-bottom 125ms;
+  border-bottom: solid 6px transparent;
+  transition: border-bottom 300ms;
 }
 .nav-link:hover {
-  background-color: #1a1a1a;
   border-bottom: solid 6px white;
 }
 
@@ -74,7 +74,7 @@ header {
 }
 
 .subpage-header {
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3), black), url("../images/backgrounds/header-banner.png");
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3), rgb(0, 0, 0)), url("../images/backgrounds/header-banner.png");
   background-attachment: scroll;
   background-position: 0px 0px;
 }
@@ -109,7 +109,7 @@ header {
 main {
   margin-left: auto;
   margin-right: auto;
-  margin-top: 5rem;
+  margin-top: 0rem;
   font-size: 1.2em;
 }
 
@@ -368,7 +368,7 @@ main {
 }
 
 .subpage-box-faded {
-  color: #b3b3b3;
+  color: rgb(179, 179, 179);
 }
 
 .projects-button {
@@ -889,6 +889,10 @@ button:hover {
 *   Medium Screens
 ***********************/
 @media (max-width: 1200px) {
+  main {
+    margin-top: 5em;
+  }
+
   .projects-box {
     max-width: 350px;
   }

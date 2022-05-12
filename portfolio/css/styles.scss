@@ -53,10 +53,10 @@ nav {
 }
 
 .nav-link {
-   transition: background-color 300ms, border-bottom 125ms;
+   border-bottom: solid 6px transparent;
+   transition: border-bottom 300ms;
 
    &:hover {
-      background-color: $gray;
       border-bottom: solid 6px $white;
    }
 }
@@ -125,7 +125,7 @@ header {
 main {
    margin-left: auto;
    margin-right: auto;
-   margin-top: 5rem;
+   margin-top: 0rem;
    font-size: 1.2em;
 }
 
@@ -806,6 +806,10 @@ button {
 *   Medium Screens
 ***********************/
 @media (max-width: 1200px) {
+   main {
+      margin-top: 5em;
+   }
+
    .projects-box {
       max-width: 350px;
    }

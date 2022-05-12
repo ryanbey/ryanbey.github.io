@@ -21,7 +21,7 @@ allProjectBoxes.forEach((projectBox) => {
             projectBox.appendChild(link);
             link.appendChild(btn);
          }
-      }, 151);
+      }, 160);
    });
 
    projectBox.addEventListener('mouseleave', () => {
