@@ -168,7 +168,7 @@ main {
       margin-left: auto;
       margin-right: auto;
       padding-top: 2em;
-      padding-bottom: 2em;
+      padding-bottom: 3em;
    }
 }
 
@@ -421,7 +421,8 @@ main {
 // Action buttons on projects page
 .projects-button {
    font-size: 0.9em;
-   margin-top: 1em;
+   position: relative;
+   top: 10px;
 }
 
 /***********************
