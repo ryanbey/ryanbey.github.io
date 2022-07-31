@@ -899,6 +899,10 @@ footer {
     max-width: 350px;
   }
 
+  .projects-button {
+    top: 0px;
+  }
+
   .box-heading {
     grid-row: 2;
     margin-top: 1em;
