@@ -16,20 +16,18 @@ allProjectBoxes.forEach((projectBox) => {
       btn.innerText = 'VIEW DETAILS';
 
       // Append Button (give time for possible duplicate buttons to be removed)
-      setTimeout(() => {
       if (!document.getElementById('details-btn')) {
             projectBox.appendChild(link);
             link.appendChild(btn);
-         }
-      }, 160);
+      }
    });
 
    projectBox.addEventListener('mouseleave', () => {
       let projectImg = projectBox.querySelector('.box-img');
 
       // Reset image styles
-      projectImg.classList.add('project-img-lighten');
       projectImg.classList.remove('project-img-darken');
+      projectImg.classList.add('project-img-lighten');
 
       // Animate button hide
       let link = document.getElementById('details-btn');
@@ -37,8 +35,6 @@ allProjectBoxes.forEach((projectBox) => {
       link.classList.add('project-img-btn-hide');    // Add class to animate hiding button
 
       // Remove button
-      setTimeout(() => {
-         link.remove(); // Wait until animation is almost completed
-      }, 150);
+      link.remove(); // Wait until animation is almost completed
    });
 });
